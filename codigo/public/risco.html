@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Análise de Perfil de Investidor</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/assets/css/risco.css" />
+    <link rel="stylesheet" href="/assets/css/styles2.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo"><img src="./assets/images/logoazul.jpg" /></div>
+      <div class="user-info">
+        <div class="user-profile">
+          <div class="user-details">
+            <div class="name" id="nome-usuario">Carregando...</div>
+            <div class="points" id="pontos-cabecalho">... Pontos</div>
+          </div>
+
+          <button id="btn-logout" class="logout-btn">Sair</button>
+        </div>
+      </div>
+    </header>
+
+    <nav class="nav-menu">
+      <a href="" class="nav-item">Início</a>
+      <a href="tarefas.html" class="nav-item">Tarefas</a>
+      <a href="ferramentas.html" class="nav-item">Ferramentas</a>
+      <a href="rank.html" class="nav-item">Rank</a>
+    </nav>
+    <div class="container">
+      <header>
+        <h1><i class="fas fa-chart-line"></i> Análise de Perfil</h1>
+        <p class="subtitle">Avalie sua tolerância e capacidade de risco</p>
+      </header>
+
+      <div class="content">
+        <section class="form-section">
+          <div class="form-header">
+            <h2 class="section-title">
+              <i class="fas fa-user-check"></i> A Análise de Perfil de
+              Investidor
+            </h2>
+            <p class="section-subtitle">
+              Descubra sua estratégia ideal de investimento
+            </p>
+          </div>
+
+          <form id="investorForm">
+            <div class="form-group">
+              <label for="name">Nome do Investidor</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Digite seu nome"
+                required
+              />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="age">Idade</label>
+                <div class="slider-container">
+                  <input
+                    type="range"
+                    id="age"
+                    name="age"
+                    min="18"
+                    max="80"
+                    value="35"
+                    class="slider"
+                  />
+                  <div class="slider-value">
+                    <span id="ageValue">35 anos</span>
+                  </div>
+                </div>
+                <div class="slider-labels">
+                  <span>18</span>
+                  <span>80</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="investmentHorizon"
+                  >Horizonte de Investimento (Anos)</label
+                >
+                <div class="slider-container">
+                  <input
+                    type="range"
+                    id="investmentHorizon"
+                    name="investmentHorizon"
+                    min="1"
+                    max="30"
+                    value="10"
+                    class="slider"
+                  />
+                  <div class="slider-value">
+                    <span id="horizonValue">10 anos</span>
+                  </div>
+                </div>
+                <div class="slider-labels">
+                  <span>1</span>
+                  <span>30</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Tolerância ao Risco</label>
+              <div class="risk-options">
+                <div class="risk-option" data-value="low">
+                  <div class="risk-icon">
+                    <i class="fas fa-shield-alt"></i>
+                  </div>
+                  <div class="risk-info">
+                    <h4>Baixa</h4>
+                    <p>Prefiro Segurança</p>
+                  </div>
+                  <div class="risk-check">
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+
+                <div class="risk-option" data-value="medium">
+                  <div class="risk-icon">
+                    <i class="fas fa-balance-scale"></i>
+                  </div>
+                  <div class="risk-info">
+                    <h4>Média</h4>
+                    <p>Equilíbrio entre risco e retorno</p>
+                  </div>
+                  <div class="risk-check">
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+
+                <div class="risk-option" data-value="high">
+                  <div class="risk-icon">
+                    <i class="fas fa-chart-line"></i>
+                  </div>
+                  <div class="risk-info">
+                    <h4>Alta</h4>
+                    <p>Aceito Mais Risco</p>
+                  </div>
+                  <div class="risk-check">
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+              </div>
+              <input
+                type="hidden"
+                id="riskTolerance"
+                name="riskTolerance"
+                value="low"
+              />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="annualIncome">Renda Anual ($)</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-money-bill-wave"></i>
+                  <input
+                    type="number"
+                    id="annualIncome"
+                    name="annualIncome"
+                    min="0"
+                    value="50000"
+                    step="1000"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="totalAssets">Patrimônio Total ($)</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-piggy-bank"></i>
+                  <input
+                    type="number"
+                    id="totalAssets"
+                    name="totalAssets"
+                    min="0"
+                    value="100000"
+                    step="1000"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="knowledge">Conhecimento em Investimentos</label>
+              <div class="knowledge-options">
+                <div class="knowledge-option" data-value="beginner">
+                  <div class="knowledge-level">
+                    <div class="level-bar"></div>
+                    <div class="level-label">Iniciante</div>
+                  </div>
+                  <p>Pouca experiência</p>
+                </div>
+
+                <div class="knowledge-option" data-value="intermediate">
+                  <div class="knowledge-level">
+                    <div class="level-bar" style="width: 50%"></div>
+                    <div class="level-label">Intermediário</div>
+                  </div>
+                  <p>Conhecimento básico</p>
+                </div>
+
+                <div class="knowledge-option" data-value="advanced">
+                  <div class="knowledge-level">
+                    <div class="level-bar" style="width: 100%"></div>
+                    <div class="level-label">Avançado</div>
+                  </div>
+                  <p>Experiência sólida</p>
+                </div>
+              </div>
+              <input
+                type="hidden"
+                id="knowledge"
+                name="knowledge"
+                value="beginner"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="financialGoals">Objetivos Financeiros</label>
+              <div class="goals-container">
+                <div class="goal-tags">
+                  <span class="goal-tag" data-value="preservation"
+                    >Preservação de Capital</span
+                  >
+                  <span class="goal-tag" data-value="income">Renda</span>
+                  <span class="goal-tag" data-value="growth">Crescimento</span>
+                  <span class="goal-tag" data-value="speculation"
+                    >Especulação</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-generate" id="generateBtn">
+              <i class="fas fa-chart-pie"></i> Gerar Análise de Perfil
+            </button>
+          </form>
+        </section>
+
+        <section class="result-section">
+          <div class="result-header">
+            <h2 class="section-title"><i class="fas fa-poll"></i> Resultado</h2>
+            <p class="section-subtitle">Seu Perfil de Investidor é:</p>
+          </div>
+
+          <div class="result-content">
+            <div class="profile-result">
+              <div class="profile-badge" id="profileBadge">
+                <div class="badge-icon">
+                  <i class="fas fa-user-shield"></i>
+                </div>
+                <div class="badge-content">
+                  <h3 id="profileType">Conservative</h3>
+                  <p id="profileName">Conservador</p>
+                </div>
+              </div>
+
+              <div class="score-container">
+                <div class="score-header">
+                  <span>Score de Risco</span>
+                  <span id="scoreValue">35/100</span>
+                </div>
+                <div class="score-bar">
+                  <div class="score-fill" id="scoreFill"></div>
+                </div>
+                <div class="score-labels">
+                  <span>Baixo Risco</span>
+                  <span>Alto Risco</span>
+                </div>
+              </div>
+
+              <div class="profile-details">
+                <div class="detail-item">
+                  <i class="fas fa-bullseye"></i>
+                  <div>
+                    <h4>Objetivo Principal</h4>
+                    <p id="mainGoal">Preservação de Capital</p>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <i class="fas fa-clock"></i>
+                  <div>
+                    <h4>Horizonte Recomendado</h4>
+                    <p id="recommendedHorizon">Curto a Médio Prazo</p>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <i class="fas fa-chart-bar"></i>
+                  <div>
+                    <h4>Volatilidade Esperada</h4>
+                    <p id="volatility">Baixa</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="recommendation-card">
+                <h3><i class="fas fa-lightbulb"></i> Recomendação:</h3>
+                <p id="recommendationText">
+                  Income focus with capital preservation, 30% Equity, 70% Fixed
+                  Income.
+                </p>
+
+                <div class="allocation-container">
+                  <div class="allocation-chart">
+                    <canvas id="allocationChart"></canvas>
+                  </div>
+                  <div class="allocation-details">
+                    <div class="allocation-item equity">
+                      <div class="allocation-color"></div>
+                      <span class="allocation-label">Equity (Ações)</span>
+                      <span class="allocation-percent" id="equityPercent"
+                        >30%</span
+                      >
+                    </div>
+                    <div class="allocation-item fixed-income">
+                      <div class="allocation-color"></div>
+                      <span class="allocation-label"
+                        >Fixed Income (Renda Fixa)</span
+                      >
+                      <span class="allocation-percent" id="fixedIncomePercent"
+                        >70%</span
+                      >
+                    </div>
+                    <div class="allocation-item alternatives">
+                      <div class="allocation-color"></div>
+                      <span class="allocation-label">Alternativos</span>
+                      <span class="allocation-percent" id="alternativesPercent"
+                        >0%</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="strategy-details">
+                  <h4>Estratégia de Investimento:</h4>
+                  <ul id="strategyList">
+                    <li>Foco em preservação de capital</li>
+                    <li>Baixa exposição a ações</li>
+                    <li>Alocação majoritária em renda fixa</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="action-buttons">
+                <button class="btn-secondary" id="resetBtn">
+                  <i class="fas fa-redo"></i> Nova Análise
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        <div class="footer-content">
+          <p>
+            <i class="fas fa-info-circle"></i> Esta análise é apenas para fins
+            educacionais. Consulte um consultor financeiro antes de tomar
+            decisões de investimento.
+          </p>
+          <p class="copyright">
+            © 2023 Análise de Perfil de Investidor | Desenvolvido para fins
+            educacionais
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Incluir arquivos JavaScript -->
+    <script src="/assets/js/risco.js"></script>
+    <script src="/assets/js/index2.js"></script>
+  </body>
+</html>

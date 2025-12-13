@@ -1,0 +1,86 @@
+{
+  "currencies": [
+    {
+      "code": "USD",
+      "name": "Dólar Americano",
+      "symbol": "$",
+      "flag": "us",
+      "country": "Estados Unidos"
+    },
+    {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€",
+      "flag": "eu",
+      "country": "União Europeia"
+    },
+    {
+      "code": "GBP",
+      "name": "Libra Esterlina",
+      "symbol": "£",
+      "flag": "gb",
+      "country": "Reino Unido"
+    },
+    {
+      "code": "JPY",
+      "name": "Iene Japonês",
+      "symbol": "¥",
+      "flag": "jp",
+      "country": "Japão"
+    },
+    {
+      "code": "CAD",
+      "name": "Dólar Canadense",
+      "symbol": "CA$",
+      "flag": "ca",
+      "country": "Canadá"
+    },
+    {
+      "code": "AUD",
+      "name": "Dólar Australiano",
+      "symbol": "A$",
+      "flag": "au",
+      "country": "Austrália"
+    },
+    {
+      "code": "CHF",
+      "name": "Franco Suíço",
+      "symbol": "CHF",
+      "flag": "ch",
+      "country": "Suíça"
+    },
+    {
+      "code": "CNY",
+      "name": "Yuan Chinês",
+      "symbol": "¥",
+      "flag": "cn",
+      "country": "China"
+    },
+    {
+      "code": "BRL",
+      "name": "Real Brasileiro",
+      "symbol": "R$",
+      "flag": "br",
+      "country": "Brasil"
+    },
+    {
+      "code": "MXN",
+      "name": "Peso Mexicano",
+      "symbol": "$",
+      "flag": "mx",
+      "country": "México"
+    }
+  ],
+  "defaultRates": {
+    "USD": 1,
+    "EUR": 0.92,
+    "GBP": 0.79,
+    "JPY": 149.50,
+    "CAD": 1.37,
+    "AUD": 1.55,
+    "CHF": 0.88,
+    "CNY": 7.28,
+    "BRL": 4.95,
+    "MXN": 17.45
+  }
+}

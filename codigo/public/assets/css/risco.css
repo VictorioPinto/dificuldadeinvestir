@@ -1,0 +1,548 @@
+/* style-investidor.css (CORRIGIDO) */
+
+/* --- VARIÁVEIS DE CORES --- */
+:root {
+  --bg-gradient-start: #1a2980;
+  --bg-gradient-end: #26d0ce;
+  --card-bg: #ffffff;
+  --text-primary: #2d3748;
+  --text-secondary: #718096;
+  --accent-gradient-start: #4facfe;
+  --accent-gradient-end: #00f2fe;
+  --success-gradient-start: #48bb78;
+  --success-gradient-end: #26d0ce;
+  --shadow-card: 0 15px 35px rgba(0, 0, 0, 0.2);
+  --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.3);
+  --radius-card: 20px;
+  --radius-btn: 12px;
+}
+
+/* --- CONFIGURAÇÃO GERAL --- */
+/* Removemos o reset agressivo de margin/padding para não quebrar o header global */
+* {
+  box-sizing: border-box;
+}
+
+/* Aplicamos o background no body, mas garantimos que o texto base seja legível */
+body {
+  background: linear-gradient(
+    135deg,
+    var(--bg-gradient-start),
+    var(--bg-gradient-end)
+  );
+  min-height: 100vh;
+  /* Retiramos a fonte genérica para não sobrescrever a do styles2.css se não quiser */
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  padding-bottom: 40px;
+}
+
+/* Centraliza o container da ferramenta */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  /* Cor do texto específica para a ferramenta, para não afetar o menu */
+  color: #fff;
+}
+
+/* --- HEADER DA FERRAMENTA (ESPECÍFICO) --- */
+/* IMPORTANTE: Usamos .container > header para não pegar o header do site (Wise Capital) */
+.container > header {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  background: transparent; /* Garante que não tenha fundo branco indesejado */
+  padding: 0; /* Remove padding que possa vir do header global */
+  display: block; /* Garante que não use flexbox do header global */
+}
+
+.container > header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff; /* Força branco no título da ferramenta */
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  color: #fff;
+}
+
+/* --- SEÇÕES (CARDS) --- */
+.form-section,
+.result-section {
+  background: var(--card-bg);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: 40px;
+  margin-bottom: 30px;
+  color: var(--text-primary); /* Texto dentro do card volta a ser escuro */
+  transition: transform 0.3s ease;
+}
+
+/* Títulos das Seções */
+.section-title {
+  color: var(--text-primary);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-title i {
+  color: var(--accent-gradient-start);
+}
+
+.section-subtitle {
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+/* --- FORMULÁRIO --- */
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-row .form-group {
+  flex: 1;
+  min-width: 250px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+/* Inputs */
+.form-group input[type="text"],
+.form-group input[type="number"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e2e8f0;
+  border-radius: var(--radius-btn);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  color: var(--text-primary);
+  background: #f8fafc;
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+}
+
+.input-with-icon input {
+  padding-left: 45px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--accent-gradient-start);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.2);
+}
+
+/* --- RANGE SLIDERS --- */
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: #e2e8f0;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    var(--accent-gradient-start),
+    var(--accent-gradient-end)
+  );
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+}
+
+.slider-value {
+  font-weight: bold;
+  color: var(--accent-gradient-start);
+  min-width: 60px;
+  text-align: right;
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 5px;
+}
+
+/* --- CARDS DE SELEÇÃO (Risk & Knowledge) --- */
+.risk-options,
+.knowledge-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.risk-option,
+.knowledge-option {
+  background: #fff;
+  border: 2px solid #e2e8f0;
+  border-radius: 15px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.risk-option:hover,
+.knowledge-option:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  border-color: #cbd5e0;
+}
+
+/* Estado Selecionado */
+.risk-option.selected,
+.knowledge-option.selected {
+  border-color: var(--accent-gradient-start);
+  background: #f0f9ff;
+  box-shadow: 0 5px 15px rgba(79, 172, 254, 0.2);
+}
+
+.risk-icon {
+  font-size: 2rem;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.risk-option.selected .risk-icon {
+  color: var(--accent-gradient-start);
+}
+
+.risk-check {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--accent-gradient-start);
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s;
+}
+
+.risk-option.selected .risk-check {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.knowledge-level {
+  background: #e2e8f0;
+  height: 6px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.level-bar {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--accent-gradient-start),
+    var(--accent-gradient-end)
+  );
+  border-radius: 3px;
+  width: 25%;
+}
+
+/* --- TAGS DE OBJETIVOS --- */
+.goals-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.goal-tag {
+  padding: 10px 20px;
+  background: #f1f5f9;
+  border-radius: 20px;
+  color: var(--text-secondary);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.goal-tag:hover {
+  background: #e2e8f0;
+}
+
+.goal-tag.selected {
+  background: linear-gradient(
+    90deg,
+    var(--accent-gradient-start),
+    var(--accent-gradient-end)
+  );
+  color: white;
+  box-shadow: 0 4px 10px rgba(79, 172, 254, 0.4);
+}
+
+/* --- BOTÕES --- */
+.btn-generate {
+  background: linear-gradient(
+    90deg,
+    var(--accent-gradient-start),
+    var(--accent-gradient-end)
+  );
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: var(--radius-btn);
+  font-size: 1.1rem;
+  font-weight: 700;
+  width: 100%;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 5px 15px rgba(79, 172, 254, 0.3);
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.btn-generate:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(79, 172, 254, 0.4);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.btn-secondary {
+  flex: 1;
+  background: transparent;
+  border: 2px solid #e2e8f0;
+  color: var(--text-secondary);
+  padding: 12px;
+  border-radius: var(--radius-btn);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-secondary:hover {
+  background: #f8fafc;
+  border-color: var(--accent-gradient-start);
+  color: var(--accent-gradient-start);
+}
+
+/* --- ÁREA DE RESULTADOS --- */
+.result-section {
+  display: none;
+  border: 2px solid var(--accent-gradient-start);
+}
+
+.profile-result {
+  text-align: center;
+}
+
+.profile-badge {
+  background: linear-gradient(135deg, #f0f9ff, #e6fffa);
+  padding: 30px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.badge-icon {
+  font-size: 3rem;
+  color: var(--accent-gradient-start);
+  margin-bottom: 10px;
+}
+
+.badge-content h3 {
+  color: var(--text-primary);
+  margin-bottom: 5px;
+}
+
+/* Score Bar */
+.score-container {
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+.score-bar {
+  height: 12px;
+  background: #e2e8f0;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.score-fill {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--success-gradient-start),
+    var(--accent-gradient-end)
+  );
+  width: 0%;
+  transition: width 1s ease-out;
+}
+
+.score-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* Detalhes do Perfil */
+.profile-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.detail-item {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.detail-item i {
+  font-size: 1.5rem;
+  color: var(--accent-gradient-start);
+}
+
+/* Alocação */
+.allocation-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.allocation-chart {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.allocation-details {
+  flex: 1;
+  text-align: left;
+}
+
+.allocation-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.allocation-color {
+  width: 15px;
+  height: 15px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.equity .allocation-color {
+  background-color: #4facfe;
+}
+.fixed-income .allocation-color {
+  background-color: #48bb78;
+}
+.alternatives .allocation-color {
+  background-color: #ffd700;
+}
+
+.allocation-percent {
+  margin-left: auto;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+/* --- FOOTER --- */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .allocation-container {
+    flex-direction: column;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .form-section,
+  .result-section {
+    padding: 25px;
+  }
+}

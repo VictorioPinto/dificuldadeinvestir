@@ -1,0 +1,29 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background-color: #0d6efd;
+}
+
+.accordion-item {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button {
+  font-weight: 600;
+  color: #0d6efd;
+}
+
+.accordion-button:not(.collapsed) {
+  color: white;
+  background-color: #0d6efd;
+}
+
+.search-container input {
+  border-radius: 10px;
+  padding: 10px;
+}

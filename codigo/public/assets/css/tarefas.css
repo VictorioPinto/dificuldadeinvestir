@@ -1,0 +1,173 @@
+/* assets/css/rank.css */
+
+/* --- FUNDO DA PÁGINA (Igual à referência) --- */
+/* Adicionamos isso para o fundo da tela ficar com o gradiente */
+body {
+  background: linear-gradient(135deg, #1a2980, #26d0ce);
+  min-height: 100vh;
+  /* Garante que o texto fora dos cards seja legível se houver */
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- CONFIGURAÇÃO DA GRADE --- */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- ESTILO GERAL DO CARD --- */
+.card-atividade {
+  background: #fff;
+  border-radius: 20px; /* Bordas arredondadas modernas (20px) */
+  border: none;
+  /* Sombra mais forte para destacar do fundo colorido */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Efeito ao passar o mouse nos cards liberados */
+.card-atividade.liberado:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* --- ÁREA DA "IMAGEM" NO TOPO --- */
+.card-img-header {
+  height: 150px;
+  width: 100%;
+  /* Gradiente Azul/Ciano vibrante */
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- CORPO DO CARD --- */
+.card-body {
+  padding: 25px;
+  text-align: left;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Título do Card */
+.card-title {
+  color: #2d3748; /* Cinza escuro */
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* Texto descritivo */
+.card-text {
+  font-size: 0.95rem;
+  color: #718096; /* Cinza médio */
+  margin-bottom: 25px;
+  flex-grow: 1;
+  line-height: 1.6;
+}
+
+/* --- BOTÃO --- */
+.btn-atividade {
+  /* Gradiente Azul vibrante */
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  width: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(79, 172, 254, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-atividade:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(79, 172, 254, 0.4);
+}
+
+/* --- ESTADOS DE BLOQUEIO --- */
+
+/* Card bloqueado */
+.card-atividade.bloqueado {
+  background-color: #f8fafc;
+  border: 1px dashed #cbd5e0;
+  box-shadow: none; /* Remove a sombra para parecer "desativado" */
+}
+
+/* Cabeçalho bloqueado */
+.card-atividade.bloqueado .card-img-header {
+  background: linear-gradient(135deg, #e2e8f0, #cbd5e0);
+}
+
+/* Ícone de cadeado */
+.overlay-lock {
+  font-size: 40px;
+  opacity: 0.4;
+  color: #4a5568;
+}
+
+/* Título bloqueado */
+.card-atividade.bloqueado .card-title {
+  color: #a0aec0;
+}
+
+/* Botão bloqueado */
+.card-atividade.bloqueado .btn-atividade {
+  background: #e2e8f0;
+  cursor: not-allowed;
+  color: #a0aec0;
+  box-shadow: none;
+  transform: none;
+}
+
+/* --- ESTADO CONCLUÍDO --- */
+
+/* Card Concluído */
+.card-atividade.concluido {
+  background-color: #f0fff4; /* Fundo menta muito suave */
+  border: 1px solid #c6f6d5;
+}
+
+/* Header Concluído */
+.card-atividade.concluido .card-img-header {
+  /* Gradiente Verde/Teal inspirado no body da referência */
+  background: linear-gradient(135deg, #48bb78, #26d0ce);
+}
+
+/* Botão Concluído */
+.card-atividade.concluido .btn-atividade {
+  background: linear-gradient(90deg, #38a169, #2f855a);
+  color: white;
+  cursor: default;
+  box-shadow: none;
+  opacity: 0.9;
+}
+
+.card-atividade.concluido .btn-atividade:hover {
+  transform: none;
+}
+
+/* Ícone de check */
+.card-atividade.concluido .overlay-lock {
+  font-size: 40px;
+  color: white;
+  opacity: 0.9;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}

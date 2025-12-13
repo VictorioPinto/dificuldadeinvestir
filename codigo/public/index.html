@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WISE CAPITAL - Dashboard</title>
+    <link rel="stylesheet" href="/assets/css/styles2.css" />
+    <script src="./assets/js/login.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/noticias.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo"><img src="./assets/images/logoazul.jpg" /></div>
+      <div class="user-info">
+        <div class="user-profile">
+          <div class="user-details">
+            <div class="name" id="nome-usuario">Carregando...</div>
+            <div class="points" id="pontos-cabecalho">... Pontos</div>
+          </div>
+
+          <button id="btn-logout" class="logout-btn">Sair</button>
+        </div>
+      </div>
+    </header>
+
+    <nav class="nav-menu">
+      <a href="" class="nav-item">Início</a>
+      <a href="tarefas.html" class="nav-item">Tarefas</a>
+      <a href="ferramentas.html" class="nav-item">Ferramentas</a>
+      <a href="rank.html" class="nav-item">Rank</a>
+    </nav>
+
+    <main class="content-area">
+      <aside class="sidebar">
+        <div class="sidebar-block blue-button">
+          <a href="tarefas.html">
+            <h3>Tarefas</h3>
+            <p>Faca as Tarefas para aprender</p>
+          </a>
+        </div>
+        <div class="sidebar-block blue-button">
+          <a href="ferramentas.html">
+            <h3>Ferramentas</h3>
+            <p>Ferramentas para ajudar a investir</p>
+          </a>
+        </div>
+        <div class="sidebar-block blue-button">
+          <a href="risco.html">
+            <h3>Analise de perfil</h3>
+            <p>Caucule o risco de investir e descubra como quer investir</p>
+          </a>
+        </div>
+      </aside>
+
+      <section class="main-cards">
+        <div class="card dark-card">
+          <h1>Notícias sobre Investimentos</h1>
+          <div id="news-container" class="container"></div>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/js/noticias.js"></script>
+    <script src="/assets/js/index2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,469 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "login": "admin",
+      "senha": "123",
+      "nome": "Administrador do Sis",
+      "pontos": 777,
+      "email": "admin@abc.com"
+    },
+    {
+      "id": "2",
+      "login": "user",
+      "senha": "123",
+      "nome": "Usuario Comum",
+      "pontos": 500,
+      "email": "user@abc.com"
+    },
+    {
+      "login": "rommel",
+      "senha": "123",
+      "nome": "Rommel",
+      "pontos": 500,
+      "email": "rommel@gmail.com",
+      "id": "3"
+    },
+    {
+      "login": "davi",
+      "senha": "123",
+      "nome": "Davi",
+      "pontos": 6666,
+      "email": "davi@gmail.com",
+      "id": "4"
+    },
+    {
+      "id": "0782",
+      "login": "111",
+      "senha": "111",
+      "nome": "111",
+      "email": "111",
+      "pontos": 100,
+      "tarefascompletar": [
+        1
+      ]
+    }
+  ],
+  "simulacoes_de_investimento": [
+    {
+      "id": "1",
+      "tipo": "tesouro",
+      "valor_ini": 1000,
+      "valor_men": 100,
+      "duracao_mes": 12,
+      "rentabilidade_mensal_pc": 1.1
+    },
+    {
+      "id": "2",
+      "tipo": "cdi",
+      "valor_ini": 1000,
+      "valor_men": 200,
+      "duracao_mes": 12,
+      "rentabilidade_mensal_pc": 1.21
+    },
+    {
+      "id": "3",
+      "tipo": "cdb",
+      "valor_ini": 1000,
+      "valor_men": 100,
+      "duracao_mes": 12,
+      "rentabilidade_mensal_pc": 1.26
+    }
+  ],
+  "faq": [
+    {
+      "id": "1",
+      "pergunta": "O que é um investimento?",
+      "resposta": "Investimento é aplicar dinheiro em algo com expectativa de retorno futuro."
+    },
+    {
+      "id": "2",
+      "pergunta": "Qual a diferença entre renda fixa e variável?",
+      "resposta": "Na renda fixa, a rentabilidade é previsível. Na variável, depende do mercado."
+    },
+    {
+      "id": "3",
+      "pergunta": "Posso começar a investir com pouco dinheiro?",
+      "resposta": "Sim! Existem investimentos acessíveis a partir de valores baixos, como Tesouro Direto."
+    },
+    {
+      "id": "4",
+      "pergunta": "O que é CDI?",
+      "resposta": "CDI é uma taxa usada como referência para investimentos de renda fixa, como CDBs."
+    }
+  ],
+  "investimentos": [
+    {
+      "id": "1",
+      "nome": "Tesouro Selic",
+      "risco": "baixo",
+      "retorno": 12.75,
+      "categoria": "renda fixa"
+    },
+    {
+      "id": "2",
+      "nome": "CDB Banco Inter",
+      "risco": "baixo",
+      "retorno": 13.2,
+      "categoria": "renda fixa"
+    },
+    {
+      "id": "3",
+      "nome": "Ações PETR4",
+      "risco": "alto",
+      "retorno": 22.1,
+      "categoria": "ações"
+    },
+    {
+      "id": "4",
+      "nome": "Ações VALE3",
+      "risco": "alto",
+      "retorno": 18.7,
+      "categoria": "ações"
+    },
+    {
+      "id": "5",
+      "nome": "Fundos Imobiliários (HGLG11)",
+      "risco": "médio",
+      "retorno": 10.2,
+      "categoria": "fundos"
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "t1",
+      "nivelId": 1,
+      "titulo": "Nível 1: Primeiros Passos e Planejamento",
+      "perguntas": [
+        {
+          "id": "q1",
+          "pergunta": "O que pode acontecer se alguém investir sem planejamento?",
+          "opcoes": [
+            "Pode alcançar lucros mais rápidos.",
+            "Pode tomar decisões impulsivas e ter prejuízos.",
+            "Pode evitar riscos e garantir retorno.",
+            "O planejamento não influencia."
+          ],
+          "correta": 1,
+          "explicacao": "Sem planejamento, o investidor age por emoção e corre riscos desnecessários."
+        },
+        {
+          "id": "q2",
+          "pergunta": "O que é a 'Reserva de Emergência'?",
+          "opcoes": [
+            "Dinheiro para viagens.",
+            "Dinheiro para ações de risco.",
+            "Dinheiro guardado para imprevistos.",
+            "Lucro de investimento."
+          ],
+          "correta": 2,
+          "explicacao": "A reserva serve para cobrir gastos inesperados sem gerar dívidas."
+        },
+        {
+          "id": "q3",
+          "pergunta": "Qual o primeiro passo antes de investir?",
+          "opcoes": [
+            "Pegar empréstimo.",
+            "Quitar dívidas e organizar orçamento.",
+            "Comprar ações na alta.",
+            "Gastar tudo."
+          ],
+          "correta": 1,
+          "explicacao": "Organize as finanças antes de investir."
+        },
+        {
+          "id": "q4",
+          "pergunta": "O que significa 'gastar menos do que ganha'?",
+          "opcoes": [
+            "Viver mal.",
+            "Regra básica para sobrar dinheiro.",
+            "Algo impossível.",
+            "Apenas para ricos."
+          ],
+          "correta": 1,
+          "explicacao": "Para investir, precisa haver sobra de capital mensal."
+        },
+        {
+          "id": "q5",
+          "pergunta": "O que é liquidez?",
+          "opcoes": [
+            "Facilidade de transformar investimento em dinheiro.",
+            "Quantidade de água.",
+            "Imposto.",
+            "Risco de perder tudo."
+          ],
+          "correta": 0,
+          "explicacao": "Alta liquidez = resgate rápido."
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "nivelId": 2,
+      "titulo": "Nível 2: Renda Fixa",
+      "perguntas": [
+        {
+          "id": "q1",
+          "pergunta": "Pergunta Teste Nivel 2",
+          "opcoes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correta": 0,
+          "explicacao": "Teste"
+        },
+        {
+          "id": "q2",
+          "pergunta": "Pergunta Teste Nivel 2",
+          "opcoes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correta": 0,
+          "explicacao": "Teste"
+        },
+        {
+          "id": "q3",
+          "pergunta": "Pergunta Teste Nivel 2",
+          "opcoes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correta": 0,
+          "explicacao": "Teste"
+        },
+        {
+          "id": "q4",
+          "pergunta": "Pergunta Teste Nivel 2",
+          "opcoes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correta": 0,
+          "explicacao": "Teste"
+        },
+        {
+          "id": "q5",
+          "pergunta": "Pergunta Teste Nivel 2",
+          "opcoes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correta": 0,
+          "explicacao": "Teste"
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "nivelId": 3,
+      "titulo": "Nível 3: Ações",
+      "perguntas": [
+        {
+          "id": "q1",
+          "pergunta": "Pergunta Teste Nivel 3",
+          "opcoes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correta": 0,
+          "explicacao": "Teste"
+        },
+        {
+          "id": "q2",
+          "pergunta": "Pergunta Teste Nivel 3",
+          "opcoes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correta": 0,
+          "explicacao": "Teste"
+        },
+        {
+          "id": "q3",
+          "pergunta": "Pergunta Teste Nivel 3",
+          "opcoes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correta": 0,
+          "explicacao": "Teste"
+        },
+        {
+          "id": "q4",
+          "pergunta": "Pergunta Teste Nivel 3",
+          "opcoes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correta": 0,
+          "explicacao": "Teste"
+        },
+        {
+          "id": "q5",
+          "pergunta": "Pergunta Teste Nivel 3",
+          "opcoes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correta": 0,
+          "explicacao": "Teste"
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "nivelId": 4,
+      "titulo": "Nível 4: FIIs",
+      "perguntas": [
+        {
+          "id": "q1",
+          "pergunta": "Pergunta Teste Nivel 4",
+          "opcoes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correta": 0,
+          "explicacao": "Teste"
+        },
+        {
+          "id": "q2",
+          "pergunta": "Pergunta Teste Nivel 4",
+          "opcoes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correta": 0,
+          "explicacao": "Teste"
+        },
+        {
+          "id": "q3",
+          "pergunta": "Pergunta Teste Nivel 4",
+          "opcoes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correta": 0,
+          "explicacao": "Teste"
+        },
+        {
+          "id": "q4",
+          "pergunta": "Pergunta Teste Nivel 4",
+          "opcoes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correta": 0,
+          "explicacao": "Teste"
+        },
+        {
+          "id": "q5",
+          "pergunta": "Pergunta Teste Nivel 4",
+          "opcoes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correta": 0,
+          "explicacao": "Teste"
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "nivelId": 5,
+      "titulo": "Nível 5: Economia",
+      "perguntas": [
+        {
+          "id": "q1",
+          "pergunta": "Pergunta Teste Nivel 5",
+          "opcoes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correta": 0,
+          "explicacao": "Teste"
+        },
+        {
+          "id": "q2",
+          "pergunta": "Pergunta Teste Nivel 5",
+          "opcoes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correta": 0,
+          "explicacao": "Teste"
+        },
+        {
+          "id": "q3",
+          "pergunta": "Pergunta Teste Nivel 5",
+          "opcoes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correta": 0,
+          "explicacao": "Teste"
+        },
+        {
+          "id": "q4",
+          "pergunta": "Pergunta Teste Nivel 5",
+          "opcoes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correta": 0,
+          "explicacao": "Teste"
+        },
+        {
+          "id": "q5",
+          "pergunta": "Pergunta Teste Nivel 5",
+          "opcoes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correta": 0,
+          "explicacao": "Teste"
+        }
+      ]
+    }
+  ]
+}

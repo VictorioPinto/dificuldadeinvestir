@@ -1,0 +1,205 @@
+/* =========================================
+   ESTILOS GERAIS DA PÁGINA (Mantendo a base)
+   ========================================= */
+body {
+  background: linear-gradient(135deg, #1a2980, #26d0ce);
+  min-height: 100vh;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 40px; /* Espaço para não colar no fundo */
+}
+
+/* =========================================
+   CONTAINER PRINCIPAL DO RANKING
+   ========================================= */
+.ranking-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  /* Sombra profunda igual aos cards de referência */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  color: #2d3748; /* Texto escuro para contraste no fundo branco */
+}
+
+.ranking-container h1 {
+  text-align: center;
+  color: #2d3748;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  /* Detalhe visual: pequena linha abaixo do título */
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.ranking-container h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* =========================================
+   LISTA DE RANKING (TOP 10)
+   ========================================= */
+#ranking-top-10 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Item individual do ranking */
+.ranking-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: #f8fafc; /* Cinza bem claro */
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.ranking-item:hover {
+  transform: translateX(5px);
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-color: #e2e8f0;
+}
+
+/* Posição (Número 1, 2, 3...) */
+.rank-pos {
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #e2e8f0;
+  color: #718096;
+  margin-right: 15px;
+}
+
+/* Nome do Usuário */
+.rank-name {
+  flex-grow: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #2d3748;
+}
+
+/* Pontuação */
+.rank-points {
+  font-weight: 800;
+  color: #1a2980; /* Azul escuro do tema */
+  font-size: 1.1rem;
+}
+
+.rank-points span {
+  font-size: 0.8rem;
+  color: #718096;
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+/* =========================================
+   DESTAQUES (PODIUM)
+   ========================================= */
+
+/* 1º Lugar - Ouro */
+.ranking-item.rank-1 .rank-pos {
+  background: linear-gradient(135deg, #ffd700, #fdb931);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(253, 185, 49, 0.4);
+}
+.ranking-item.rank-1 {
+  border: 2px solid #fdb931;
+  background-color: #fffbf0;
+}
+
+/* 2º Lugar - Prata */
+.ranking-item.rank-2 .rank-pos {
+  background: linear-gradient(135deg, #e0e0e0, #bdbdbd);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(189, 189, 189, 0.4);
+}
+
+/* 3º Lugar - Bronze */
+.ranking-item.rank-3 .rank-pos {
+  background: linear-gradient(135deg, #cd7f32, #a0522d);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(160, 82, 45, 0.4);
+}
+
+/* =========================================
+   CARD DO USUÁRIO LOGADO (FIXO OU FINAL)
+   ========================================= */
+#ranking-user {
+  margin-top: 40px;
+  border-top: 1px dashed #cbd5e0;
+  padding-top: 20px;
+}
+
+/* Estilo especial para o card do próprio usuário */
+.ranking-item.user-highlight {
+  /* Gradiente Azul/Ciano vibrante igual aos botões da referência */
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  color: white;
+  box-shadow: 0 10px 20px rgba(79, 172, 254, 0.3);
+  transform: scale(1.02);
+}
+
+.ranking-item.user-highlight .rank-pos {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.ranking-item.user-highlight .rank-name {
+  color: #fff;
+}
+
+.ranking-item.user-highlight .rank-points {
+  color: #fff;
+}
+
+.ranking-item.user-highlight .rank-points span {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Texto "Sua Posição" antes do card */
+#ranking-user::before {
+  content: "Sua Classificação";
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #718096;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .ranking-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .ranking-item {
+    padding: 10px 15px;
+  }
+
+  .rank-name {
+    font-size: 1rem;
+  }
+}

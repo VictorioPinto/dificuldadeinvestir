@@ -1,0 +1,207 @@
+/* assets/css/tarefa.css */
+
+/* --- FUNDO DA PÁGINA --- */
+body {
+  background: linear-gradient(135deg, #1a2980, #26d0ce);
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  padding-bottom: 40px;
+}
+
+/* --- CONTAINER PRINCIPAL (Estilo Card) --- */
+.quiz-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  /* Sombra profunda igual aos cards do Rank */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  color: #2d3748; /* Texto escuro para contraste */
+  position: relative;
+  overflow: hidden;
+}
+
+/* --- CABEÇALHO DO QUIZ --- */
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.quiz-header h2 {
+  color: #1a2980; /* Azul escuro do tema */
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.progresso {
+  font-size: 1rem;
+  color: #718096; /* Cinza médio */
+  font-weight: 600;
+  background: #f7fafc;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+/* --- PERGUNTA --- */
+.pergunta-box {
+  margin-bottom: 30px;
+}
+
+.pergunta-box p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #2d3748;
+}
+
+/* --- OPÇÕES DE RESPOSTA --- */
+.opcoes-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.btn-opcao {
+  background-color: #f8fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 15px 20px;
+  text-align: left;
+  font-size: 1rem;
+  color: #4a5568;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  width: 100%;
+}
+
+/* Hover nas opções (apenas se não estiverem travadas) */
+.btn-opcao:hover:not(:disabled) {
+  border-color: #4facfe;
+  background-color: #f0f9ff;
+  transform: translateX(5px);
+  color: #1a2980;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Estados de Acerto/Erro (Adicionados pelo JS) */
+.btn-opcao.correto {
+  background-color: #f0fff4 !important;
+  border-color: #48bb78 !important;
+  color: #2f855a !important;
+  font-weight: bold;
+}
+
+.btn-opcao.errado {
+  background-color: #fff5f5 !important;
+  border-color: #f56565 !important;
+  color: #c53030 !important;
+  opacity: 0.8;
+}
+
+/* Botões desabilitados não devem ter cursor pointer */
+.btn-opcao:disabled {
+  cursor: default;
+}
+
+/* --- ÁREA DE FEEDBACK --- */
+.feedback {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f7fafc;
+  border: 1px solid #e2e8f0;
+  animation: fadeIn 0.5s ease;
+}
+
+.feedback.oculto {
+  display: none;
+}
+
+/* --- BOTÃO PRIMÁRIO (Próxima/Concluir) --- */
+/* Estilo idêntico ao .btn-atividade do Rank */
+.btn-primary {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 5px 15px rgba(79, 172, 254, 0.3);
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(79, 172, 254, 0.4);
+}
+
+/* --- TELA FINAL DE RESULTADO --- */
+.resultado {
+  text-align: center;
+  padding: 30px;
+  animation: fadeIn 0.5s ease;
+}
+
+.resultado.oculto {
+  display: none;
+}
+
+.resultado h3 {
+  font-size: 2rem;
+  color: #1a2980;
+  margin-bottom: 15px;
+}
+
+.resultado p {
+  font-size: 1.2rem;
+  color: #718096;
+  margin-bottom: 20px;
+}
+
+#pontuacao-final {
+  font-weight: bold;
+  color: #4facfe;
+  font-size: 1.5rem;
+}
+
+/* Animação suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .quiz-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .quiz-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .pergunta-box p {
+    font-size: 1.1rem;
+  }
+}

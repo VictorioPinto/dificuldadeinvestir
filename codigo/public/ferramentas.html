@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-R" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ranking de Pontos</title>
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/styles2.css" />
+    <link rel="stylesheet" href="/assets/css/ferramentas.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css"
+    />
+
+    <script src="./assets/js/login.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo"><img src="./assets/images/logoazul.jpg" /></div>
+      <div class="user-info">
+        <div class="user-profile">
+          <div class="user-details">
+            <div class="name" id="nome-usuario">Carregando...</div>
+            <div class="points" id="pontos-cabecalho">... Pontos</div>
+          </div>
+
+          <button id="btn-logout" class="logout-btn">Sair</button>
+        </div>
+      </div>
+    </header>
+
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-item">Início</a>
+      <a href="tarefas.html" class="nav-item">Tarefas</a>
+      <a href="ferramentas.html" class="nav-item">Ferramentas</a>
+      <a href="rank.html" class="nav-item">Rank</a>
+    </nav>
+    <main>
+      <div class="calculcorpo">
+        <h3>Tipo de investimento:</h3>
+
+        <div class="radio-group-wrapper">
+          <div class="radio-group-row">
+            <input
+              type="radio"
+              id="tipo-tesouro"
+              name="tipo_investimento"
+              value="tesouro"
+            />
+            <label for="tipo-tesouro">Tesouro</label>
+
+            <input
+              type="radio"
+              id="index-cdi"
+              name="tipo_investimento"
+              value="cdi"
+              checked
+            />
+            <label for="index-cdi" class="cdi-label">CDI</label>
+            <input
+              type="radio"
+              id="tipo-poupanca"
+              name="tipo_investimento"
+              value="poupanca"
+            />
+            <label for="tipo-poupanca">Poupança</label>
+          </div>
+        </div>
+
+        <div id="calc-form">
+          <div class="form-columns">
+            <div class="form-column-left">
+              <div class="form-group">
+                <label for="inicial">Valor do investimento inicial</label>
+                <div class="input-wrapper prefix-r-cifrao">
+                  <input type="number" id="inicial" value="1000" step="100" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="mensal">Valor do investimento mensal</label>
+                <div class="input-wrapper prefix-r-cifrao">
+                  <input type="number" id="mensal" value="200" step="50" />
+                </div>
+              </div>
+
+              <div class="form-group-resultado">
+                <span class="resultado-label"
+                  >Valor obtido:
+                  <strong id="resultado-obtido">R$ 0,00</strong></span
+                >
+                <span class="resultado-label"
+                  >Total investido:
+                  <strong id="resultado-investido">R$ 0,00</strong></span
+                >
+              </div>
+
+              <input type="hidden" id="investimento-id" value="" />
+
+              <button id="botao-calcular" class="btn-calcular">
+                Calcular Resultado
+              </button>
+            </div>
+
+            <div class="form-column-right">
+              <div class="form-group">
+                <label for="meses">Duração do investimento</label>
+                <div class="input-wrapper suffix-meses">
+                  <input type="number" id="meses" value="12" step="1" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="rentabilidade_valor">Rentabilidade:</label>
+                <div class="rentabilidade-group">
+                  <div class="input-wrapper prefix-porcento">
+                    <input
+                      type="number"
+                      id="rentabilidade_valor"
+                      value="1.1"
+                      step="0.1"
+                    />
+                  </div>
+                  <select id="rentabilidade_periodo">
+                    <option value="mensal" selected>men</option>
+                    <option value="anual">ano</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/js/contas.js"></script>
+    </main>
+    <!-- convesor de moedas (nao sei se esta funcionando)-->
+    <div class="container">
+      <div class="header">
+        <h1><i class="fas fa-globe-americas"></i> Câmbio Global</h1>
+        <p>Conversão rápida e precisa de moedas em tempo real</p>
+      </div>
+
+      <div class="converter-card">
+        <div class="live-rates">
+          <div class="live-rates-title">
+            <i class="fas fa-bolt"></i> Live Rates
+          </div>
+          <div class="exchange-rate" id="liveRate">1 USD = 0.92 EUR</div>
+        </div>
+
+        <div class="converter-form">
+          <div class="input-group">
+            <label for="amount">Valor a Converter</label>
+            <div class="amount-input">
+              <input
+                type="number"
+                id="amount"
+                value="100"
+                min="0"
+                step="0.01"
+              />
+            </div>
+          </div>
+
+          <div class="currency-selectors">
+            <div class="currency-box active" id="fromCurrencyBox">
+              <label>De</label>
+              <div class="currency-select">
+                <div class="currency-flag fi fi-us" id="fromFlag"></div>
+                <select id="fromCurrency"></select>
+              </div>
+            </div>
+
+            <button class="swap-button" id="swapButton">
+              <i class="fas fa-exchange-alt"></i>
+            </button>
+
+            <div class="currency-box" id="toCurrencyBox">
+              <label>Para</label>
+              <div class="currency-select">
+                <div class="currency-flag fi fi-eu" id="toFlag"></div>
+                <select id="toCurrency"></select>
+              </div>
+            </div>
+          </div>
+
+          <button class="convert-button" id="convertButton">
+            <i class="fas fa-sync-alt"></i> Converter Agora
+          </button>
+        </div>
+
+        <div class="result-container" id="resultContainer">
+          <div class="result-title">Valor Convertido</div>
+          <div class="converted-amount" id="convertedAmount">-</div>
+          <div class="conversion-detail" id="conversionDetail">-</div>
+        </div>
+
+        <div class="loading" id="loading">
+          <div class="loading-spinner"></div>
+          <p>Obtendo taxas de câmbio...</p>
+        </div>
+
+        <div class="error-message" id="errorMessage">
+          <i class="fas fa-exclamation-triangle"></i> Erro ao carregar taxas de
+          câmbio. Verifique sua conexão.
+        </div>
+
+        <div class="last-update" id="lastUpdate">
+          Última atualização: Carregando...
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/assets/js/coversao.js" defer></script>
+  <script src="/assets/js/index2.js" defer></script>
+</html>

@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #fff;
+}
+
+.header {
+  background-color: white;
+  color: black;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-details {
+  font-size: 0.9em;
+  line-height: 1.2;
+  text-align: right;
+}
+
+.user-details .points {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.nav-menu {
+  background-color: white;
+  padding: 10px 20px;
+  border-bottom: 2px solid #4facfe;
+}
+.nav-item {
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 1.1em;
+  padding-bottom: 3px;
+  transition: color 0.3s;
+}
+.nav-item:hover {
+  color: #4facfe;
+}
+.content-area {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-grow: 1;
+}
+.sidebar {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-block {
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.blue-button {
+  background-color: white;
+  color: black;
+}
+.blue-button h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: black;
+}
+.blue-button p {
+  color: black;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+.blue-button:hover {
+  background-color: white;
+}
+.blue-points {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+.blue-points h3 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+.main-cards {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 5px;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.dark-card {
+  background-color: #f5f5f5;
+}
+.card h2 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+.card-content-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-text p {
+  margin-bottom: 5px;
+}
+
+.card-text span {
+  font-weight: bold;
+}
+
+.card-text .cdb span {
+  color: #f00;
+}
+
+.card-text .renda-fixa span {
+  color: #00f;
+}
+
+.chart-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: conic-gradient(#00f 0% 35%, #f00 35% 100%);
+  margin-left: 20px;
+  border: 3px solid #444;
+}
+.dark-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+.dark-card ul li {
+  margin-bottom: 8px;
+  padding-left: 15px;
+  position: relative;
+}
+.placeholder-card {
+  text-align: center;
+  font-style: italic;
+  opacity: 0.6;
+  padding: 30px;
+}
+@media (max-width: 768px) {
+  .content-area {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .card-content-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .chart-circle {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+}
+/* Botão de Logout */
+.logout-btn {
+  background-color: transparent;
+  border: 2px solid #e74c3c; /* Vermelho suave */
+  color: #e74c3c;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: all 0.3s ease;
+  margin-left: 10px; /* Garante separação extra se o gap do flex falhar */
+}
+
+.logout-btn:hover {
+  background-color: #e74c3c;
+  color: white;
+  box-shadow: 0 2px 5px rgba(231, 76, 60, 0.3);
+}
+/* Ajuste da Logo */
+.logo img {
+  height: 60px; /* Define uma altura fixa (ajuste entre 40px e 60px conforme preferir) */
+  width: auto; /* A largura se ajusta automaticamente para não distorcer */
+  object-fit: contain; /* Garante que a imagem caiba no espaço sem cortar */
+  display: block; /* Remove espaços em branco indesejados abaixo da imagem */
+}
+
+/* Opcional: Garante que a div da logo esteja alinhada */
+.logo {
+  display: flex;
+  align-items: center;
+}

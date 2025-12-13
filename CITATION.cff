@@ -1,0 +1,32 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: 
+authors:
+  - family-names: Davi	
+    given-names: Silveira
+  - family-names: Hendryo
+    given-names: Rodrigues
+  - family-names: Victório
+    given-names: Neto
+  - family-names: Cristiano	
+    given-names: Avelar Marques
+  - family-names: Gabriel 
+    given-names: Gama
+  - name-suffix: Professor
+    affiliation: PUC Minas
+  - family-names: Rommel
+    given-names: Vieira Carneiro
+  - family-names: Luciana
+    given-names: Diniz
+  - family-names: João
+    given-names: Caetano
+keywords:
+  - Investimeto
+  - Rentabilidade
+  - Economia
+  - Independência Financeira
+  - Mercado Financeiro
+repository-code: https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti1-g10-dificuldade-de-investimento.git
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2022-07-14

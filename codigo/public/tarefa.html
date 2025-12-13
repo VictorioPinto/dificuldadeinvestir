@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realizar Tarefa</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/tarefa.css" />
+    <link rel="stylesheet" href="/assets/css/styles2.css" />
+
+    <script src="./assets/js/login.js" defer></script>
+    <script src="./assets/js/tarefa.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo"><img src="./assets/images/logoazul.jpg" /></div>
+      <div class="user-info">
+        <div class="user-profile">
+          <div class="user-details">
+            <div class="name" id="nome-usuario">Carregando...</div>
+            <div class="points" id="pontos-cabecalho">... Pontos</div>
+          </div>
+
+          <button id="btn-logout" class="logout-btn">Sair</button>
+        </div>
+      </div>
+    </header>
+
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-item">Início</a>
+      <a href="tarefas.html" class="nav-item">Tarefas</a>
+      <a href="ferramentas.html" class="nav-item">Ferramentas</a>
+      <a href="rank.html" class="nav-item">Rank</a>
+    </nav>
+
+    <main>
+      <div class="quiz-container" id="quiz-container">
+        <div class="quiz-header">
+          <h2 id="titulo-tarefa">Carregando tarefa...</h2>
+          <div class="progresso">
+            Questão <span id="num-questao">1</span> de 5
+          </div>
+        </div>
+
+        <div class="pergunta-box">
+          <p id="texto-pergunta">...</p>
+        </div>
+
+        <div class="opcoes-grid" id="opcoes-container"></div>
+
+        <div id="feedback-area" class="feedback oculto">
+          <p id="feedback-texto"></p>
+          <button
+            id="btn-proximo"
+            class="btn-primary"
+            onclick="proximaPergunta()"
+          >
+            Próxima Pergunta
+          </button>
+        </div>
+
+        <div id="resultado-final" class="resultado oculto">
+          <h3>Tarefa Concluída!</h3>
+          <p>Você acertou <span id="pontuacao-final">0</span> de 5.</p>
+          <p id="mensagem-bonus"></p>
+          <button
+            class="btn-primary"
+            onclick="window.location.href='rank.html'"
+          >
+            Voltar para o Rank
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="/assets/js/index2.js"></script>
+  </body>
+</html>

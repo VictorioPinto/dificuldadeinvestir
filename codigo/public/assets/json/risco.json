@@ -1,0 +1,152 @@
+{
+  "profiles": {
+    "conservative": {
+      "name": "Conservador",
+      "description": "Foco na preservação de capital com baixo risco",
+      "scoreRange": [0, 40],
+      "color": "#4c6ef5",
+      "icon": "fa-user-shield",
+      "characteristics": {
+        "riskTolerance": "Muito Baixa",
+        "expectedReturn": "Baixo",
+        "volatility": "Muito Baixa",
+        "liquidity": "Alta"
+      }
+    },
+    "moderate": {
+      "name": "Moderado",
+      "description": "Equilíbrio entre risco e retorno",
+      "scoreRange": [41, 70],
+      "color": "#12b886",
+      "icon": "fa-balance-scale",
+      "characteristics": {
+        "riskTolerance": "Média",
+        "expectedReturn": "Moderado",
+        "volatility": "Média",
+        "liquidity": "Moderada"
+      }
+    },
+    "aggressive": {
+      "name": "Agressivo",
+      "description": "Busca por retornos elevados com tolerância a risco",
+      "scoreRange": [71, 100],
+      "color": "#fa5252",
+      "icon": "fa-rocket",
+      "characteristics": {
+        "riskTolerance": "Alta",
+        "expectedReturn": "Alto",
+        "volatility": "Alta",
+        "liquidity": "Baixa"
+      }
+    }
+  },
+  
+  "investmentStrategies": {
+    "conservative": {
+      "recommendation": "Income focus with capital preservation",
+      "allocation": {
+        "equity": 30,
+        "fixedIncome": 65,
+        "alternatives": 5
+      },
+      "strategies": [
+        "Foco em preservação de capital",
+        "Baixa exposição a ações",
+        "Alocação majoritária em renda fixa de alta qualidade",
+        "Investimentos em títulos do governo e CDBs",
+        "Diversificação conservadora"
+      ],
+      "products": [
+        "Tesouro Direto (Prefixado, IPCA+)",
+        "CDBs de bancos grandes",
+        "LCIs e LCAs",
+        "Fundos de Renda Fixa Conservadores",
+        "Poupança (apenas para reserva de emergência)"
+      ]
+    },
+    "moderate": {
+      "recommendation": "Balanced growth with moderate risk",
+      "allocation": {
+        "equity": 50,
+        "fixedIncome": 40,
+        "alternatives": 10
+      },
+      "strategies": [
+        "Crescimento balanceado com risco moderado",
+        "Equilíbrio entre ações e renda fixa",
+        "Diversificação setorial",
+        "Exposição internacional moderada",
+        "Revisão trimestral do portfólio"
+      ],
+      "products": [
+        "Fundos Multimercados",
+        "ETFs de ações (BOVA11, IVVB11)",
+        "Ações de blue chips",
+        "Fundos Imobiliários",
+        "Debêntures"
+      ]
+    },
+    "aggressive": {
+      "recommendation": "Growth focused with higher risk tolerance",
+      "allocation": {
+        "equity": 70,
+        "fixedIncome": 20,
+        "alternatives": 10
+      },
+      "strategies": [
+        "Crescimento agressivo com alta tolerância a risco",
+        "Alta exposição a ações",
+        "Investimentos em small caps e growth stocks",
+        "Exposição internacional significativa",
+        "Uso moderado de alavancagem"
+      ],
+      "products": [
+        "Ações de small caps",
+        "ETFs setoriais e temáticos",
+        "Fundos de Ações",
+        "Ações internacionais",
+        "Derivativos (com cautela)"
+      ]
+    }
+  },
+  
+  "questions": {
+    "age": {
+      "weights": {
+        "18-25": 20,
+        "26-35": 15,
+        "36-45": 10,
+        "46-55": 5,
+        "56+": 0
+      }
+    },
+    "riskTolerance": {
+      "weights": {
+        "low": 0,
+        "medium": 25,
+        "high": 50
+      }
+    },
+    "knowledge": {
+      "weights": {
+        "beginner": 0,
+        "intermediate": 10,
+        "advanced": 20
+      }
+    },
+    "horizon": {
+      "weights": {
+        "short": 0,
+        "medium": 10,
+        "long": 20
+      }
+    },
+    "incomeAssetsRatio": {
+      "weights": {
+        "low": 0,
+        "medium": 5,
+        "high": 10
+      }
+    }
+  }
+}

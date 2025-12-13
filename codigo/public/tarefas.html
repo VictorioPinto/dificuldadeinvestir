@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-R" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ranking de Pontos</title>
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/styles2.css" />
+    <link rel="stylesheet" href="./assets/css/tarefas.css" />
+
+    <script src="./assets/js/login.js" defer></script>
+    <script src="./assets/js/tarefas.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo"><img src="./assets/images/logoazul.jpg" /></div>
+      <div class="user-info">
+        <div class="user-profile">
+          <div class="user-details">
+            <div class="name" id="nome-usuario">Carregando...</div>
+            <div class="points" id="pontos-cabecalho">... Pontos</div>
+          </div>
+
+          <button id="btn-logout" class="logout-btn">Sair</button>
+        </div>
+      </div>
+    </header>
+
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-item">Início</a>
+      <a href="tarefas.html" class="nav-item">Tarefas</a>
+      <a href="ferramentas.html" class="nav-item">Ferramentas</a>
+      <a href="rank.html" class="nav-item">Rank</a>
+    </nav>
+    <main>
+      <div class="container-trilha">
+        <h1>Trilha de Conhecimento</h1>
+        <p>Desbloqueie novas atividades ganhando pontos!</p>
+
+        <div id="grid-cards" class="grid-cards"></div>
+      </div>
+    </main>
+  </body>
+  <script src="/assets/js/index2.js"></script>
+</html>

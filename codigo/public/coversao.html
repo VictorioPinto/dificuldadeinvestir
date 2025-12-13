@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Câmbio Global - Conversor de Moedas em Tempo Real</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1><i class="fas fa-globe-americas"></i> Câmbio Global</h1>
+        <p>Conversão rápida e precisa de moedas em tempo real</p>
+      </div>
+
+      <div class="converter-card">
+        <div class="live-rates">
+          <div class="live-rates-title">
+            <i class="fas fa-bolt"></i> Live Rates
+          </div>
+          <div class="exchange-rate" id="liveRate">1 USD = 0.92 EUR</div>
+        </div>
+
+        <div class="converter-form">
+          <div class="input-group">
+            <label for="amount">Valor a Converter</label>
+            <div class="amount-input">
+              <input
+                type="number"
+                id="amount"
+                value="100"
+                min="0"
+                step="0.01"
+              />
+            </div>
+          </div>
+
+          <div class="currency-selectors">
+            <div class="currency-box active" id="fromCurrencyBox">
+              <label>De</label>
+              <div class="currency-select">
+                <div class="currency-flag fi fi-us" id="fromFlag"></div>
+                <select id="fromCurrency"></select>
+              </div>
+            </div>
+
+            <button class="swap-button" id="swapButton">
+              <i class="fas fa-exchange-alt"></i>
+            </button>
+
+            <div class="currency-box" id="toCurrencyBox">
+              <label>Para</label>
+              <div class="currency-select">
+                <div class="currency-flag fi fi-eu" id="toFlag"></div>
+                <select id="toCurrency"></select>
+              </div>
+            </div>
+          </div>
+
+          <button class="convert-button" id="convertButton">
+            <i class="fas fa-sync-alt"></i> Converter Agora
+          </button>
+        </div>
+
+        <div class="result-container" id="resultContainer">
+          <div class="result-title">Valor Convertido</div>
+          <div class="converted-amount" id="convertedAmount">-</div>
+          <div class="conversion-detail" id="conversionDetail">-</div>
+        </div>
+
+        <div class="loading" id="loading">
+          <div class="loading-spinner"></div>
+          <p>Obtendo taxas de câmbio...</p>
+        </div>
+
+        <div class="error-message" id="errorMessage">
+          <i class="fas fa-exclamation-triangle"></i> Erro ao carregar taxas de
+          câmbio. Verifique sua conexão.
+        </div>
+
+        <div class="currency-grid" id="currencyGrid"></div>
+
+        <div class="last-update" id="lastUpdate">
+          Última atualização: Carregando...
+        </div>
+      </div>
+    </div>
+
+    <script></script>
+  </body>
+</html>
