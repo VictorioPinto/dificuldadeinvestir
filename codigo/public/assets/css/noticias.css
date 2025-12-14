@@ -108,3 +108,59 @@ body {
   margin: 20px 0;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
+/* --- ESTILO DO CARD DE BOAS-VINDAS --- */
+/* Sobrescreve e melhora o estilo do card dark-card apenas nesta página */
+.main-cards .card.dark-card {
+  background: #ffffff;
+  border-radius: 20px;
+  border: none;
+  /* Sombra suave igual aos cards de notícias */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  /* Borda lateral azul para destaque */
+  border-left: 6px solid #4facfe;
+}
+
+/* Título de Boas-vindas */
+.main-cards .card.dark-card h2 {
+  color: #1a2980; /* Azul escuro da marca */
+  font-weight: 800;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Parágrafos do texto */
+.main-cards .card.dark-card p {
+  color: #4a5568; /* Cinza escuro para leitura confortável */
+  font-size: 1.1rem;
+  line-height: 1.8; /* Mais espaçamento entre linhas */
+  margin-bottom: 15px;
+}
+
+/* Destaques em negrito */
+.main-cards .card.dark-card strong {
+  color: #0088cc; /* Azul vibrante para destacar palavras-chave */
+  font-weight: 700;
+}
+
+/* Efeito decorativo de fundo (opcional) */
+.main-cards .card.dark-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(
+    135deg,
+    transparent 50%,
+    rgba(79, 172, 254, 0.1) 50%
+  );
+  border-radius: 0 20px 0 0;
+  pointer-events: none;
+}

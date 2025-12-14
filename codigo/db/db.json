@@ -2,46 +2,120 @@
   "usuarios": [
     {
       "id": "1",
-      "login": "admin",
+      "login": "ana.silva",
       "senha": "123",
-      "nome": "Administrador do Sis",
-      "pontos": 777,
-      "email": "admin@abc.com"
+      "nome": "Ana Silva",
+      "email": "ana.silva@email.com",
+      "pontos": 1500,
+      "tarefascompletar": [1, 2]
     },
     {
       "id": "2",
-      "login": "user",
+      "login": "bruno.souza",
       "senha": "123",
-      "nome": "Usuario Comum",
-      "pontos": 500,
-      "email": "user@abc.com"
+      "nome": "Bruno Souza",
+      "email": "bruno.souza@email.com",
+      "pontos": 900,
+      "tarefascompletar": [1]
     },
     {
-      "login": "rommel",
-      "senha": "123",
-      "nome": "Rommel",
-      "pontos": 500,
-      "email": "rommel@gmail.com",
       "id": "3",
-      "tarefascompletar": [1]
-    },
-    {
-      "login": "davi",
+      "login": "carla.mendes",
       "senha": "123",
-      "nome": "Davi",
-      "pontos": 6666,
-      "email": "davi@gmail.com",
+      "nome": "Carla Mendes",
+      "email": "carla.mendes@email.com",
+      "pontos": 2300,
+      "tarefascompletar": [1, 2, 3]
+    },
+    {
       "id": "4",
+      "login": "daniel.oli",
+      "senha": "123",
+      "nome": "Daniel Oliveira",
+      "email": "daniel.oli@email.com",
+      "pontos": 200,
+      "tarefascompletar": []
+    },
+    {
+      "id": "5",
+      "login": "duda.santos",
+      "senha": "123",
+      "nome": "Eduarda Santos",
+      "email": "duda.santos@email.com",
+      "pontos": 3100,
+      "tarefascompletar": [1, 2, 3, 4]
+    },
+    {
+      "id": "6",
+      "login": "felipe.costa",
+      "senha": "123",
+      "nome": "Felipe Costa",
+      "email": "felipe.costa@email.com",
+      "pontos": 500,
       "tarefascompletar": [1]
     },
     {
-      "id": "0782",
-      "login": "111",
-      "senha": "111",
-      "nome": "111",
-      "email": "111",
-      "pontos": 100,
+      "id": "7",
+      "login": "gabi.rocha",
+      "senha": "123",
+      "nome": "Gabriela Rocha",
+      "email": "gabi.rocha@email.com",
+      "pontos": 4200,
+      "tarefascompletar": [1, 2, 3, 4, 5]
+    },
+    {
+      "id": "8",
+      "login": "henrique.lima",
+      "senha": "123",
+      "nome": "Henrique Lima",
+      "email": "henrique.lima@email.com",
+      "pontos": 1000,
+      "tarefascompletar": [1, 2]
+    },
+    {
+      "id": "9",
+      "login": "isa.martins",
+      "senha": "123",
+      "nome": "Isabela Martins",
+      "email": "isa.martins@email.com",
+      "pontos": 200,
+      "tarefascompletar": []
+    },
+    {
+      "id": "10",
+      "login": "joao.ferreira",
+      "senha": "123",
+      "nome": "João Ferreira",
+      "email": "joao.ferreira@email.com",
+      "pontos": 1800,
+      "tarefascompletar": [1, 2]
+    },
+    {
+      "id": "11",
+      "login": "karina.alves",
+      "senha": "123",
+      "nome": "Karina Alves",
+      "email": "karina.alves@email.com",
+      "pontos": 600,
       "tarefascompletar": [1]
+    },
+    {
+      "id": "12",
+      "login": "lucas.pereira",
+      "senha": "123",
+      "nome": "Lucas Pereira",
+      "email": "lucas.pereira@email.com",
+      "pontos": 2800,
+      "tarefascompletar": [1, 2, 3]
+    },
+    {
+      "id": "c1a3",
+      "login": "victorio",
+      "senha": "victorio",
+      "nome": "victorio",
+      "email": "victorio",
+      "pontos": 0,
+      "tarefascompletar": []
     }
   ],
   "simulacoes_de_investimento": [
@@ -133,7 +207,7 @@
     {
       "id": "t1",
       "nivelId": 1,
-      "titulo": "Nível 1: Primeiros Passos e Planejamento",
+      "titulo": "Nível 1: Primeiros Passos",
       "perguntas": [
         {
           "id": "q1",
@@ -204,38 +278,58 @@
       "perguntas": [
         {
           "id": "q1",
-          "pergunta": "Pergunta Teste Nivel 2",
-          "opcoes": ["A", "B", "C", "D"],
-          "correta": 0,
-          "explicacao": "Teste"
+          "pergunta": "O que é o Tesouro Direto?",
+          "opcoes": [
+            "Programa para comprar ações.",
+            "Programa do governo para venda de títulos públicos.",
+            "Um banco privado.",
+            "Uma moeda digital."
+          ],
+          "correta": 1,
+          "explicacao": "O Tesouro Direto permite que pessoas físicas emprestem dinheiro ao governo em troca de juros."
         },
         {
           "id": "q2",
-          "pergunta": "Pergunta Teste Nivel 2",
-          "opcoes": ["A", "B", "C", "D"],
+          "pergunta": "O que significa um título 'Prefixado'?",
+          "opcoes": [
+            "Taxa de juros definida na compra.",
+            "Taxa muda todo dia.",
+            "Você só sabe o retorno no final.",
+            "Não rende juros."
+          ],
           "correta": 0,
-          "explicacao": "Teste"
+          "explicacao": "No prefixado, você sabe exatamente quanto vai receber no vencimento."
         },
         {
           "id": "q3",
-          "pergunta": "Pergunta Teste Nivel 2",
-          "opcoes": ["A", "B", "C", "D"],
-          "correta": 0,
-          "explicacao": "Teste"
+          "pergunta": "O que é o FGC?",
+          "opcoes": [
+            "Um imposto.",
+            "Fundo que garante até R$ 250 mil se o banco quebrar.",
+            "Taxa de administração.",
+            "Um tipo de ação."
+          ],
+          "correta": 1,
+          "explicacao": "O FGC protege investimentos como CDB, LCI e LCA."
         },
         {
           "id": "q4",
-          "pergunta": "Pergunta Teste Nivel 2",
-          "opcoes": ["A", "B", "C", "D"],
-          "correta": 0,
-          "explicacao": "Teste"
+          "pergunta": "Qual destes é isento de Imposto de Renda?",
+          "opcoes": ["CDB", "Tesouro Selic", "LCI e LCA", "Tesouro IPCA"],
+          "correta": 2,
+          "explicacao": "LCI e LCA são isentas de IR para pessoas físicas."
         },
         {
           "id": "q5",
-          "pergunta": "Pergunta Teste Nivel 2",
-          "opcoes": ["A", "B", "C", "D"],
-          "correta": 0,
-          "explicacao": "Teste"
+          "pergunta": "A poupança atualmente rende:",
+          "opcoes": [
+            "Mais que a inflação sempre.",
+            "Geralmente menos que Tesouro Selic e CDBs.",
+            "30% ao ano.",
+            "O mesmo que a Bolsa."
+          ],
+          "correta": 1,
+          "explicacao": "A poupança tem regras de rendimento que muitas vezes perdem para a inflação ou CDI."
         }
       ]
     },
@@ -246,122 +340,1197 @@
       "perguntas": [
         {
           "id": "q1",
-          "pergunta": "Pergunta Teste Nivel 3",
-          "opcoes": ["A", "B", "C", "D"],
-          "correta": 0,
-          "explicacao": "Teste"
+          "pergunta": "Ao comprar uma ação, você vira:",
+          "opcoes": [
+            "Credor da empresa.",
+            "Sócio minoritário da empresa.",
+            "Cliente VIP.",
+            "Funcionário."
+          ],
+          "correta": 1,
+          "explicacao": "Ação é a menor fração do capital social de uma empresa."
         },
         {
           "id": "q2",
-          "pergunta": "Pergunta Teste Nivel 3",
-          "opcoes": ["A", "B", "C", "D"],
-          "correta": 0,
-          "explicacao": "Teste"
+          "pergunta": "O que são Dividendos?",
+          "opcoes": [
+            "Multas.",
+            "Parte do lucro distribuída aos acionistas.",
+            "Taxas da corretora.",
+            "Impostos."
+          ],
+          "correta": 1,
+          "explicacao": "Dividendos são a divisão de lucros com os sócios."
         },
         {
           "id": "q3",
-          "pergunta": "Pergunta Teste Nivel 3",
-          "opcoes": ["A", "B", "C", "D"],
-          "correta": 0,
-          "explicacao": "Teste"
+          "pergunta": "O que é o Ibovespa?",
+          "opcoes": [
+            "Um banco.",
+            "O principal índice da Bolsa brasileira.",
+            "Uma empresa de petróleo.",
+            "Uma criptomoeda."
+          ],
+          "correta": 1,
+          "explicacao": "O Ibovespa mede o desempenho médio das ações mais negociadas."
         },
         {
           "id": "q4",
-          "pergunta": "Pergunta Teste Nivel 3",
-          "opcoes": ["A", "B", "C", "D"],
-          "correta": 0,
-          "explicacao": "Teste"
+          "pergunta": "Ações são:",
+          "opcoes": [
+            "Renda Fixa.",
+            "Renda Variável.",
+            "Sem risco.",
+            "Garantidas pelo governo."
+          ],
+          "correta": 1,
+          "explicacao": "O preço varia conforme o mercado e resultados da empresa."
         },
         {
           "id": "q5",
-          "pergunta": "Pergunta Teste Nivel 3",
-          "opcoes": ["A", "B", "C", "D"],
-          "correta": 0,
-          "explicacao": "Teste"
+          "pergunta": "Estratégia segura para iniciantes:",
+          "opcoes": [
+            "Vender na baixa.",
+            "Comprar só uma empresa.",
+            "Diversificar e focar no longo prazo.",
+            "Day Trade sem estudo."
+          ],
+          "correta": 2,
+          "explicacao": "Diversificação reduz riscos específicos de uma única empresa."
         }
       ]
     },
     {
       "id": "t4",
       "nivelId": 4,
-      "titulo": "Nível 4: FIIs",
+      "titulo": "Nível 4: Fundos Imobiliários (FIIs)",
       "perguntas": [
         {
           "id": "q1",
-          "pergunta": "Pergunta Teste Nivel 4",
-          "opcoes": ["A", "B", "C", "D"],
-          "correta": 0,
-          "explicacao": "Teste"
+          "pergunta": "O que é um FII?",
+          "opcoes": [
+            "Empréstimo bancário.",
+            "Fundo que investe no setor imobiliário.",
+            "Imobiliária.",
+            "Título público."
+          ],
+          "correta": 1,
+          "explicacao": "FIIs investem em shoppings, galpões, escritórios ou dívidas do setor."
         },
         {
           "id": "q2",
-          "pergunta": "Pergunta Teste Nivel 4",
-          "opcoes": ["A", "B", "C", "D"],
-          "correta": 0,
-          "explicacao": "Teste"
+          "pergunta": "Como se ganha dinheiro com FIIs?",
+          "opcoes": [
+            "Apenas vendendo.",
+            "Recebendo aluguéis mensais (proventos).",
+            "Pagando taxas.",
+            "Sorteio."
+          ],
+          "correta": 1,
+          "explicacao": "A maioria dos FIIs distribui lucros de aluguéis mensalmente."
         },
         {
           "id": "q3",
-          "pergunta": "Pergunta Teste Nivel 4",
-          "opcoes": ["A", "B", "C", "D"],
+          "pergunta": "O que é 'Fundo de Tijolo'?",
+          "opcoes": [
+            "Investe em imóveis físicos.",
+            "Investe em papel.",
+            "Investe em ações.",
+            "Investe em obras paradas."
+          ],
           "correta": 0,
-          "explicacao": "Teste"
+          "explicacao": "Tijolo refere-se a imóveis reais como prédios e galpões."
         },
         {
           "id": "q4",
-          "pergunta": "Pergunta Teste Nivel 4",
-          "opcoes": ["A", "B", "C", "D"],
-          "correta": 0,
-          "explicacao": "Teste"
+          "pergunta": "Os dividendos de FIIs para PF são:",
+          "opcoes": [
+            "Tributados.",
+            "Isentos de IR (na maioria dos casos).",
+            "Confiscados.",
+            "Pagos em mercadoria."
+          ],
+          "correta": 1,
+          "explicacao": "Atualmente, rendimentos mensais de FIIs são isentos de IR para pessoa física."
         },
         {
           "id": "q5",
-          "pergunta": "Pergunta Teste Nivel 4",
-          "opcoes": ["A", "B", "C", "D"],
-          "correta": 0,
-          "explicacao": "Teste"
+          "pergunta": "O que é vacância?",
+          "opcoes": [
+            "Feriado.",
+            "Imóvel vazio (sem aluguel).",
+            "Lucro alto.",
+            "Nome do gestor."
+          ],
+          "correta": 1,
+          "explicacao": "Vacância representa a parte do imóvel que não está gerando renda."
         }
       ]
     },
     {
       "id": "t5",
       "nivelId": 5,
-      "titulo": "Nível 5: Economia",
+      "titulo": "Nível 5: Economia Básica",
       "perguntas": [
         {
           "id": "q1",
-          "pergunta": "Pergunta Teste Nivel 5",
-          "opcoes": ["A", "B", "C", "D"],
-          "correta": 0,
-          "explicacao": "Teste"
+          "pergunta": "O que é a Taxa Selic?",
+          "opcoes": [
+            "Imposto.",
+            "Taxa básica de juros da economia.",
+            "Lucro do banco.",
+            "Inflação."
+          ],
+          "correta": 1,
+          "explicacao": "A Selic baliza todas as outras taxas de juros do país."
         },
         {
           "id": "q2",
-          "pergunta": "Pergunta Teste Nivel 5",
-          "opcoes": ["A", "B", "C", "D"],
-          "correta": 0,
-          "explicacao": "Teste"
+          "pergunta": "O que é o IPCA?",
+          "opcoes": [
+            "Índice de ações.",
+            "Índice oficial de inflação.",
+            "Imposto de carro.",
+            "Taxa de câmbio."
+          ],
+          "correta": 1,
+          "explicacao": "IPCA mede a variação de preços para o consumidor."
         },
         {
           "id": "q3",
-          "pergunta": "Pergunta Teste Nivel 5",
-          "opcoes": ["A", "B", "C", "D"],
-          "correta": 0,
-          "explicacao": "Teste"
+          "pergunta": "Inflação alta faz o quê?",
+          "opcoes": [
+            "Aumenta poder de compra.",
+            "Diminui poder de compra.",
+            "Não muda nada.",
+            "Gera deflação."
+          ],
+          "correta": 1,
+          "explicacao": "O dinheiro perde valor e compra menos coisas."
         },
         {
           "id": "q4",
-          "pergunta": "Pergunta Teste Nivel 5",
-          "opcoes": ["A", "B", "C", "D"],
-          "correta": 0,
-          "explicacao": "Teste"
+          "pergunta": "O que é diversificar?",
+          "opcoes": [
+            "Ter várias carteiras.",
+            "Investir em diferentes ativos para reduzir risco.",
+            "Apostar tudo numa coisa só.",
+            "Guardar dinheiro em casa."
+          ],
+          "correta": 1,
+          "explicacao": "Não colocar todos os ovos na mesma cesta."
         },
         {
           "id": "q5",
-          "pergunta": "Pergunta Teste Nivel 5",
-          "opcoes": ["A", "B", "C", "D"],
+          "pergunta": "O que são Juros Compostos?",
+          "opcoes": [
+            "Juros ruins.",
+            "Juros sobre juros (bola de neve positiva).",
+            "Taxa fixa.",
+            "Juros simples."
+          ],
+          "correta": 1,
+          "explicacao": "O rendimento gera novo rendimento, acelerando o crescimento."
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "nivelId": 6,
+      "titulo": "Nível 6: Análise de Ações",
+      "perguntas": [
+        {
+          "id": "q1",
+          "pergunta": "O que é P/L (Preço sobre Lucro)?",
+          "opcoes": [
+            "Preço do Leite.",
+            "Indicador de quanto tempo leva para ter o retorno do capital pelo lucro.",
+            "Preço Líquido.",
+            "Preço de Liquidação."
+          ],
+          "correta": 1,
+          "explicacao": "Ajuda a saber se uma ação está cara ou barata em relação ao lucro que gera."
+        },
+        {
+          "id": "q2",
+          "pergunta": "O que é uma Blue Chip?",
+          "opcoes": [
+            "Ficha azul de poker.",
+            "Ação de empresa grande, consolidada e com boa reputação.",
+            "Empresa que está falindo.",
+            "Empresa de tecnologia nova."
+          ],
+          "correta": 1,
+          "explicacao": "Exemplos: Petrobras, Vale, Itaú. São empresas líderes de mercado."
+        },
+        {
+          "id": "q3",
+          "pergunta": "O que é Small Cap?",
+          "opcoes": [
+            "Boné pequeno.",
+            "Empresa com menor valor de mercado e maior potencial de crescimento.",
+            "Empresa gigante.",
+            "Empresa estatal."
+          ],
+          "correta": 1,
+          "explicacao": "Small Caps podem crescer muito, mas têm mais risco."
+        },
+        {
+          "id": "q4",
+          "pergunta": "O que é ROE?",
+          "opcoes": [
+            "Retorno sobre Patrimônio Líquido.",
+            "Risco de Operação.",
+            "Receita Operacional.",
+            "Registro Oficial."
+          ],
           "correta": 0,
-          "explicacao": "Teste"
+          "explicacao": "Mede a capacidade da empresa de gerar lucro com o dinheiro dos acionistas."
+        },
+        {
+          "id": "q5",
+          "pergunta": "O que é Governança Corporativa?",
+          "opcoes": [
+            "Política do governo.",
+            "Boas práticas de gestão e transparência da empresa.",
+            "Apenas pagar impostos.",
+            "Ter um site bonito."
+          ],
+          "correta": 1,
+          "explicacao": "Empresas com boa governança (Novo Mercado) tendem a respeitar mais o acionista minoritário."
+        }
+      ]
+    },
+    {
+      "id": "t7",
+      "nivelId": 7,
+      "titulo": "Nível 7: Fundos de Investimento",
+      "perguntas": [
+        {
+          "id": "q1",
+          "pergunta": "O que faz um Gestor de Fundo?",
+          "opcoes": [
+            "Atende o telefone.",
+            "Decide onde investir o dinheiro do fundo.",
+            "Paga os investidores do bolso dele.",
+            "Vende cotas na rua."
+          ],
+          "correta": 1,
+          "explicacao": "O gestor é o profissional responsável pela estratégia do fundo."
+        },
+        {
+          "id": "q2",
+          "pergunta": "O que é Taxa de Administração?",
+          "opcoes": [
+            "Multa por sair do fundo.",
+            "Valor pago anualmente para remunerar a gestão do fundo.",
+            "Imposto do governo.",
+            "Lucro do investidor."
+          ],
+          "correta": 1,
+          "explicacao": "É o custo para manter a equipe profissional cuidando do dinheiro."
+        },
+        {
+          "id": "q3",
+          "pergunta": "O que é 'Come-cotas'?",
+          "opcoes": [
+            "Um monstro.",
+            "Antecipação semestral do Imposto de Renda em fundos.",
+            "Taxa de sucesso.",
+            "Prejuízo do fundo."
+          ],
+          "correta": 1,
+          "explicacao": "O governo recolhe IR a cada 6 meses (maio e novembro) reduzindo o número de cotas."
+        },
+        {
+          "id": "q4",
+          "pergunta": "O que é um Fundo Multimercado?",
+          "opcoes": [
+            "Fundo que só compra ações.",
+            "Fundo que pode investir em várias classes (ações, renda fixa, câmbio).",
+            "Fundo de supermercado.",
+            "Fundo imobiliário."
+          ],
+          "correta": 1,
+          "explicacao": "Ele tem liberdade para misturar ativos e buscar rentabilidade em cenários diversos."
+        },
+        {
+          "id": "q5",
+          "pergunta": "Fundo de Ações tem garantia do FGC?",
+          "opcoes": [
+            "Sim, até 250 mil.",
+            "Não.",
+            "Às vezes.",
+            "Só se o gestor quiser."
+          ],
+          "correta": 1,
+          "explicacao": "Fundos de investimento não contam com a garantia do Fundo Garantidor de Créditos."
+        }
+      ]
+    },
+    {
+      "id": "t8",
+      "nivelId": 8,
+      "titulo": "Nível 8: Investimento no Exterior",
+      "perguntas": [
+        {
+          "id": "q1",
+          "pergunta": "O que é um BDR (Brazilian Depositary Receipt)?",
+          "opcoes": [
+            "Um banco digital.",
+            "Recibo negociado no Brasil que representa ações estrangeiras.",
+            "Dólar em espécie.",
+            "Título público americano."
+          ],
+          "correta": 1,
+          "explicacao": "Permite investir em empresas como Apple e Google direto pela bolsa brasileira."
+        },
+        {
+          "id": "q2",
+          "pergunta": "O que é o S&P 500?",
+          "opcoes": [
+            "Um carro de corrida.",
+            "Índice com as 500 maiores empresas das bolsas americanas.",
+            "Uma marca de refrigerante.",
+            "Um imposto americano."
+          ],
+          "correta": 1,
+          "explicacao": "É o principal índice de referência do mercado de ações dos EUA."
+        },
+        {
+          "id": "q3",
+          "pergunta": "Por que investir em Dólar?",
+          "opcoes": [
+            "Porque é verde.",
+            "Proteção (hedge) contra crises no Brasil e diversificação global.",
+            "Para viajar apenas.",
+            "Porque rende 100% ao mês."
+          ],
+          "correta": 1,
+          "explicacao": "Ter parte do patrimônio em moeda forte protege seu poder de compra global."
+        },
+        {
+          "id": "q4",
+          "pergunta": "O que é um ETF (Exchange Traded Fund)?",
+          "opcoes": [
+            "Um extraterrestre.",
+            "Fundo negociado em bolsa que replica um índice (como o S&P 500).",
+            "Uma criptomoeda.",
+            "Um imposto."
+          ],
+          "correta": 1,
+          "explicacao": "ETFs são uma forma barata e prática de diversificar investindo em índices inteiros."
+        },
+        {
+          "id": "q5",
+          "pergunta": "O que é uma 'Stock'?",
+          "opcoes": [
+            "Estoque de loja.",
+            "Ação de uma empresa negociada em bolsa estrangeira (EUA).",
+            "Um tipo de título.",
+            "Uma meia."
+          ],
+          "correta": 1,
+          "explicacao": "Stock é o termo em inglês para Ação."
+        }
+      ]
+    },
+    {
+      "id": "t9",
+      "nivelId": 9,
+      "titulo": "Nível 9: Criptomoedas",
+      "perguntas": [
+        {
+          "id": "q1",
+          "pergunta": "O que é o Bitcoin?",
+          "opcoes": [
+            "Moeda de um jogo.",
+            "Primeira criptomoeda descentralizada do mundo.",
+            "Uma empresa.",
+            "Um banco online."
+          ],
+          "correta": 1,
+          "explicacao": "Criado por Satoshi Nakamoto, permite transações sem intermediários."
+        },
+        {
+          "id": "q2",
+          "pergunta": "O que é Blockchain?",
+          "opcoes": [
+            "Um brinquedo de blocos.",
+            "Tecnologia de registro distribuído e seguro usada pelas criptomoedas.",
+            "Um site de notícias.",
+            "Uma corrente de ferro."
+          ],
+          "correta": 1,
+          "explicacao": "É o livro-razão digital onde todas as transações ficam gravadas imutavelmente."
+        },
+        {
+          "id": "q3",
+          "pergunta": "Criptomoedas são consideradas:",
+          "opcoes": [
+            "Renda Fixa.",
+            "Ativos de altíssima volatilidade e risco.",
+            "Seguras e estáveis.",
+            "Garantidas pelo governo."
+          ],
+          "correta": 1,
+          "explicacao": "O preço pode subir ou cair drasticamente em pouco tempo."
+        },
+        {
+          "id": "q4",
+          "pergunta": "O que é uma Stablecoin?",
+          "opcoes": [
+            "Criptomoeda com valor pareado a um ativo real (ex: Dólar).",
+            "Moeda que só sobe.",
+            "Moeda de estábulo.",
+            "Bitcoin antigo."
+          ],
+          "correta": 0,
+          "explicacao": "Busca manter paridade (1:1) com moedas fiduciárias para evitar volatilidade."
+        },
+        {
+          "id": "q5",
+          "pergunta": "Onde guardar criptomoedas com mais segurança?",
+          "opcoes": [
+            "Na corretora (Exchange).",
+            "Em uma carteira própria (Wallet) onde você tem a chave privada.",
+            "No email.",
+            "No banco tradicional."
+          ],
+          "correta": 1,
+          "explicacao": "'Not your keys, not your coins'. Na wallet, o controle é total seu."
+        }
+      ]
+    },
+    {
+      "id": "t10",
+      "nivelId": 10,
+      "titulo": "Nível 10: Imposto de Renda",
+      "perguntas": [
+        {
+          "id": "q1",
+          "pergunta": "Qual a alíquota de IR para ações em operações comuns (Swing Trade)?",
+          "opcoes": [
+            "Isento sempre.",
+            "15% sobre o lucro (se vender acima de 20k no mês).",
+            "20% sobre o lucro.",
+            "27.5%."
+          ],
+          "correta": 1,
+          "explicacao": "Vendas abaixo de R$ 20 mil/mês são isentas. Acima disso, paga 15% sobre o lucro."
+        },
+        {
+          "id": "q2",
+          "pergunta": "Qual a alíquota de IR para Day Trade (compra e venda no mesmo dia)?",
+          "opcoes": [
+            "Isento.",
+            "15%.",
+            "20% sobre o lucro (sem isenção).",
+            "10%."
+          ],
+          "correta": 2,
+          "explicacao": "Day Trade não tem isenção dos 20k e a alíquota é maior (20%)."
+        },
+        {
+          "id": "q3",
+          "pergunta": "Como funciona o IR na Renda Fixa (Tabela Regressiva)?",
+          "opcoes": [
+            "Sempre 15%.",
+            "Diminui conforme o tempo: começa em 22,5% e cai até 15% após 2 anos.",
+            "Aumenta com o tempo.",
+            "É isento sempre."
+          ],
+          "correta": 1,
+          "explicacao": "Quanto mais tempo você deixa o dinheiro, menos imposto paga."
+        },
+        {
+          "id": "q4",
+          "pergunta": "Quem deve pagar o DARF de ações?",
+          "opcoes": [
+            "A corretora desconta tudo.",
+            "O próprio investidor deve calcular e pagar no mês seguinte.",
+            "O governo manda o boleto.",
+            "Não precisa pagar."
+          ],
+          "correta": 1,
+          "explicacao": "Em renda variável, a responsabilidade de recolher o imposto é do investidor."
+        },
+        {
+          "id": "q5",
+          "pergunta": "FIIs pagam IR na venda de cotas com lucro?",
+          "opcoes": [
+            "Não, são isentos.",
+            "Sim, 20% sobre o lucro.",
+            "Sim, 15%.",
+            "Apenas se vender muito."
+          ],
+          "correta": 1,
+          "explicacao": "Diferente dos dividendos (isentos), o lucro na venda da cota paga 20% de IR."
+        }
+      ]
+    },
+    {
+      "id": "t11",
+      "nivelId": 11,
+      "titulo": "Nível 11: Previdência Privada",
+      "perguntas": [
+        {
+          "id": "q1",
+          "pergunta": "O que é PGBL?",
+          "opcoes": [
+            "Plano Gerador de Benefício Livre (permite deduzir do IR).",
+            "Plano Garantido.",
+            "Programa do Governo.",
+            "Poupança Grande."
+          ],
+          "correta": 0,
+          "explicacao": "Ideal para quem faz declaração completa do IR (deduz até 12% da renda bruta)."
+        },
+        {
+          "id": "q2",
+          "pergunta": "O que é VGBL?",
+          "opcoes": [
+            "Vida Gerador de Benefício Livre (não deduz IR).",
+            "Valor Garantido.",
+            "Venda Geral.",
+            "Vida Grande."
+          ],
+          "correta": 0,
+          "explicacao": "Ideal para quem faz declaração simples ou é isento. O IR incide só sobre o lucro."
+        },
+        {
+          "id": "q3",
+          "pergunta": "Previdência serve para sucessão patrimonial?",
+          "opcoes": [
+            "Não.",
+            "Sim, pois não entra em inventário e chega rápido aos beneficiários.",
+            "Apenas para empresas.",
+            "Não sei."
+          ],
+          "correta": 1,
+          "explicacao": "É uma ferramenta excelente para passar dinheiro aos herdeiros sem burocracia."
+        },
+        {
+          "id": "q4",
+          "pergunta": "Na tabela regressiva da previdência, a alíquota mínima é:",
+          "opcoes": ["15%", "10% (após 10 anos).", "27.5%", "Zero."],
+          "correta": 1,
+          "explicacao": "Incentiva o longuíssimo prazo, chegando a apenas 10% de imposto."
+        },
+        {
+          "id": "q5",
+          "pergunta": "Posso portar minha previdência de um banco para outro?",
+          "opcoes": [
+            "Não, tem que sacar.",
+            "Sim, através da portabilidade sem pagar IR.",
+            "Só se pagar multa.",
+            "Apenas se for o mesmo fundo."
+          ],
+          "correta": 1,
+          "explicacao": "A portabilidade permite trocar de fundo ruim para um bom sem pagar imposto no caminho."
+        }
+      ]
+    },
+    {
+      "id": "t12",
+      "nivelId": 12,
+      "titulo": "Nível 12: Finanças Comportamentais",
+      "perguntas": [
+        {
+          "id": "q1",
+          "pergunta": "O que é o 'Efeito Manada'?",
+          "opcoes": [
+            "Investir em gado.",
+            "Seguir a maioria sem análise própria (comprar na alta, vender na baixa).",
+            "Ser líder.",
+            "Ganhar muito dinheiro."
+          ],
+          "correta": 1,
+          "explicacao": "É um viés perigoso onde o investidor age por imitação, geralmente perdendo dinheiro."
+        },
+        {
+          "id": "q2",
+          "pergunta": "O que é 'Aversão à Perda'?",
+          "opcoes": [
+            "Gostar de perder.",
+            "A dor da perda é psicologicamente 2x mais forte que a alegria do ganho.",
+            "Nunca perder dinheiro.",
+            "Medo de altura."
+          ],
+          "correta": 1,
+          "explicacao": "Isso faz investidores segurarem ações perdedoras por tempo demais esperando 'empatar'."
+        },
+        {
+          "id": "q3",
+          "pergunta": "O que é 'Viés da Confirmação'?",
+          "opcoes": [
+            "Ter certeza de tudo.",
+            "Buscar apenas informações que confirmam o que você já acredita.",
+            "Confirmar email.",
+            "Ser indeciso."
+          ],
+          "correta": 1,
+          "explicacao": "O investidor ignora sinais negativos de um ativo só porque gosta dele."
+        },
+        {
+          "id": "q4",
+          "pergunta": "Por que não se deve operar notícias?",
+          "opcoes": [
+            "Porque jornal mente.",
+            "Geralmente o mercado já precificou a notícia antes dela sair ('sobe no boato, cai no fato').",
+            "Porque é chato.",
+            "Porque é ilegal."
+          ],
+          "correta": 1,
+          "explicacao": "O mercado antecipa movimentos. Quem chega com a notícia do jornal está atrasado."
+        },
+        {
+          "id": "q5",
+          "pergunta": "O segredo mental para o longo prazo é:",
+          "opcoes": [
+            "Olhar o home broker todo minuto.",
+            "Paciência e disciplina.",
+            "Ansiedade.",
+            "Euforia."
+          ],
+          "correta": 1,
+          "explicacao": "Investimento é uma maratona, não uma corrida de 100 metros."
+        }
+      ]
+    },
+    {
+      "id": "t13",
+      "nivelId": 13,
+      "titulo": "Nível 13: Planejamento de Aposentadoria",
+      "perguntas": [
+        {
+          "id": "q1",
+          "pergunta": "O que é Independência Financeira (FIRE)?",
+          "opcoes": [
+            "Fogo em inglês.",
+            "Viver de renda passiva que cobre seus custos de vida.",
+            "Ser rico e gastar tudo.",
+            "Ganhar na loteria."
+          ],
+          "correta": 1,
+          "explicacao": "Financial Independence, Retire Early: quando seus ativos pagam suas contas."
+        },
+        {
+          "id": "q2",
+          "pergunta": "Por que não depender só do INSS?",
+          "opcoes": [
+            "O teto é baixo e as regras mudam.",
+            "O INSS paga muito bem.",
+            "Não gosto do governo.",
+            "É proibido."
+          ],
+          "correta": 0,
+          "explicacao": "O INSS funciona como um seguro básico, mas raramente mantém o padrão de vida."
+        },
+        {
+          "id": "q3",
+          "pergunta": "O que é Renda Passiva?",
+          "opcoes": [
+            "Trabalhar muito.",
+            "Dinheiro que entra sem você trabalhar ativamente (aluguéis, dividendos).",
+            "Dinheiro achado.",
+            "Salário."
+          ],
+          "correta": 1,
+          "explicacao": "É o dinheiro trabalhando para você enquanto você dorme."
+        },
+        {
+          "id": "q4",
+          "pergunta": "Qual a regra dos 4% (estudo Trinity)?",
+          "opcoes": [
+            "Retirar 4% da carteira ao ano na aposentadoria para o dinheiro não acabar.",
+            "Pagar 4% de taxa.",
+            "Investir só 4% do salário.",
+            "Ganhar 4% ao mês."
+          ],
+          "correta": 0,
+          "explicacao": "Um guia prático para saber quanto acumular para viver de renda."
+        },
+        {
+          "id": "q5",
+          "pergunta": "Quanto mais cedo começar a investir...",
+          "opcoes": [
+            "Menos esforço mensal é necessário (graças aos juros compostos).",
+            "Mais difícil fica.",
+            "Menos dinheiro você terá.",
+            "Não faz diferença."
+          ],
+          "correta": 0,
+          "explicacao": "O tempo é o fator exponencial na fórmula dos juros compostos."
+        }
+      ]
+    },
+    {
+      "id": "t14",
+      "nivelId": 14,
+      "titulo": "Nível 14: ETFs e BDRs Avançado",
+      "perguntas": [
+        {
+          "id": "q1",
+          "pergunta": "Um ETF como o IVVB11 investe em quê?",
+          "opcoes": [
+            "Empresas brasileiras.",
+            "No índice S&P 500 dos EUA (500 maiores empresas).",
+            "Ouro.",
+            "Renda fixa."
+          ],
+          "correta": 1,
+          "explicacao": "É uma forma simples de dolarizar a carteira investindo nas maiores do mundo."
+        },
+        {
+          "id": "q2",
+          "pergunta": "Qual a vantagem do ETF sobre Stock Picking?",
+          "opcoes": [
+            "Diversificação automática e baixo custo.",
+            "Você escolhe a melhor ação.",
+            "Rende mais sempre.",
+            "Não paga imposto."
+          ],
+          "correta": 0,
+          "explicacao": "Você compra o 'palheiro' inteiro em vez de procurar a agulha, garantindo a média do mercado."
+        },
+        {
+          "id": "q3",
+          "pergunta": "BDRs pagam dividendos?",
+          "opcoes": [
+            "Nunca.",
+            "Sim, mas incide imposto e taxas.",
+            "Sim, isento de IR.",
+            "Apenas em ações."
+          ],
+          "correta": 1,
+          "explicacao": "Os dividendos de BDRs são tributados como renda vinda do exterior (tabela progressiva)."
+        },
+        {
+          "id": "q4",
+          "pergunta": "ETF paga dividendo no Brasil?",
+          "opcoes": [
+            "A maioria reinveste automaticamente os dividendos.",
+            "Sim, todo mês na conta.",
+            "ETFs não geram lucro.",
+            "Depende do gestor."
+          ],
+          "correta": 0,
+          "explicacao": "No Brasil, a maioria dos ETFs acumula os dividendos, aumentando o valor da cota (embora existam exceções recentes)."
+        },
+        {
+          "id": "q5",
+          "pergunta": "O que é o BOVA11?",
+          "opcoes": [
+            "ETF que replica o Ibovespa.",
+            "Ação de gado.",
+            "Fundo imobiliário.",
+            "Título público."
+          ],
+          "correta": 0,
+          "explicacao": "É o ETF mais famoso do Brasil, replicando o desempenho da nossa bolsa."
+        }
+      ]
+    },
+    {
+      "id": "t15",
+      "nivelId": 15,
+      "titulo": "Nível 15: Gestão de Risco",
+      "perguntas": [
+        {
+          "id": "q1",
+          "pergunta": "O que é Correlação de Ativos?",
+          "opcoes": [
+            "Quando ativos se movem na mesma direção.",
+            "Nome de uma ação.",
+            "Taxa de erro.",
+            "Correio."
+          ],
+          "correta": 0,
+          "explicacao": "Para diversificar bem, você busca ativos com correlação baixa ou negativa (ex: Bolsa cai, Dólar sobe)."
+        },
+        {
+          "id": "q2",
+          "pergunta": "O que é Volatilidade?",
+          "opcoes": [
+            "Risco de perder tudo.",
+            "A intensidade e frequência das oscilações de preço.",
+            "Velocidade da internet.",
+            "Um imposto."
+          ],
+          "correta": 1,
+          "explicacao": "Volatilidade não é perda permanente, é apenas o 'balanço' do preço no curto prazo."
+        },
+        {
+          "id": "q3",
+          "pergunta": "Qual a regra básica da alocação de ativos?",
+          "opcoes": [
+            "100% em ações.",
+            "Definir percentuais para cada classe (ex: 60% RF, 40% RV) e rebalancear.",
+            "Comprar o que está subindo.",
+            "Seguir o gerente."
+          ],
+          "correta": 1,
+          "explicacao": "O Asset Allocation define 90% do retorno da sua carteira no longo prazo."
+        },
+        {
+          "id": "q4",
+          "pergunta": "O que é 'Risco de Ruína'?",
+          "opcoes": [
+            "Risco de perder dinheiro a ponto de não conseguir recuperar.",
+            "Risco de chover.",
+            "Risco pequeno.",
+            "Perder 10 reais."
+          ],
+          "correta": 0,
+          "explicacao": "É o que acontece quando se aposta tudo (All-in) e dá errado. Deve ser evitado a todo custo."
+        },
+        {
+          "id": "q5",
+          "pergunta": "Ter Reserva de Oportunidade serve para:",
+          "opcoes": [
+            "Gastar no shopping.",
+            "Comprar ativos bons quando o mercado cai (promoção).",
+            "Pagar dívidas.",
+            "Nada."
+          ],
+          "correta": 1,
+          "explicacao": "É dinheiro líquido guardado para aproveitar quedas da bolsa."
+        }
+      ]
+    },
+    {
+      "id": "t16",
+      "nivelId": 16,
+      "titulo": "Nível 16: Day Trade vs Longo Prazo",
+      "perguntas": [
+        {
+          "id": "q1",
+          "pergunta": "O que é Day Trade?",
+          "opcoes": [
+            "Investir por anos.",
+            "Abrir e fechar a operação no mesmo dia.",
+            "Trocar de dia.",
+            "Comprar à noite."
+          ],
+          "correta": 1,
+          "explicacao": "Busca lucros rápidos com oscilações diárias, mas tem altíssimo risco."
+        },
+        {
+          "id": "q2",
+          "pergunta": "O que é Buy & Hold?",
+          "opcoes": [
+            "Comprar e segurar por longo prazo.",
+            "Comprar e vender rápido.",
+            "Segurar dinheiro.",
+            "Comprar burros."
+          ],
+          "correta": 0,
+          "explicacao": "Estratégia de se tornar sócio e ganhar com o crescimento e dividendos da empresa por anos."
+        },
+        {
+          "id": "q3",
+          "pergunta": "Estatísticas mostram que no Day Trade:",
+          "opcoes": [
+            "Todos ficam ricos.",
+            "A grande maioria (90%+) perde dinheiro no longo prazo.",
+            "É fácil.",
+            "Não tem risco."
+          ],
+          "correta": 1,
+          "explicacao": "É uma atividade profissional difícil, não recomendada para iniciantes ou amadores."
+        },
+        {
+          "id": "q4",
+          "pergunta": "O que é Swing Trade?",
+          "opcoes": [
+            "Dançar.",
+            "Operações que duram dias ou semanas.",
+            "Operações de segundos.",
+            "Investir para 10 anos."
+          ],
+          "correta": 1,
+          "explicacao": "Fica entre o Day Trade e o Buy & Hold, buscando tendências de curto/médio prazo."
+        },
+        {
+          "id": "q5",
+          "pergunta": "Qual análise é mais usada no Day Trade?",
+          "opcoes": [
+            "Análise Fundamentalista (Balanços).",
+            "Análise Técnica (Gráficos e Fluxo).",
+            "Astrologia.",
+            "Notícias antigas."
+          ],
+          "correta": 1,
+          "explicacao": "O day trader olha preços e padrões gráficos, não a saúde financeira da empresa."
+        }
+      ]
+    },
+    {
+      "id": "t17",
+      "nivelId": 17,
+      "titulo": "Nível 17: Mercado de Opções",
+      "perguntas": [
+        {
+          "id": "q1",
+          "pergunta": "O que é uma Opção no mercado financeiro?",
+          "opcoes": [
+            "Uma escolha de vida.",
+            "Um contrato que dá direito de comprar ou vender um ativo em data futura.",
+            "Uma ação barata.",
+            "Um consórcio."
+          ],
+          "correta": 1,
+          "explicacao": "Opções são derivativos. Derivam do preço de outro ativo (ação)."
+        },
+        {
+          "id": "q2",
+          "pergunta": "O que é uma CALL?",
+          "opcoes": [
+            "Uma ligação.",
+            "Opção de Compra (aposta na alta).",
+            "Opção de Venda.",
+            "Um imposto."
+          ],
+          "correta": 1,
+          "explicacao": "Quem compra uma CALL ganha se a ação subir acima do preço alvo."
+        },
+        {
+          "id": "q3",
+          "pergunta": "O que é uma PUT?",
+          "opcoes": [
+            "Colocar em inglês.",
+            "Opção de Venda (aposta na baixa ou proteção/seguro).",
+            "Opção de Compra.",
+            "Um taco de golfe."
+          ],
+          "correta": 1,
+          "explicacao": "Quem compra uma PUT se protege (hedge) caso a ação caia muito."
+        },
+        {
+          "id": "q4",
+          "pergunta": "Opções possuem vencimento?",
+          "opcoes": [
+            "Não, são eternas.",
+            "Sim, se não exercer, elas viram 'pó' (perdem valor total).",
+            "Duram 10 anos.",
+            "Depende da lua."
+          ],
+          "correta": 1,
+          "explicacao": "Opções têm data para expirar. É um jogo contra o tempo."
+        },
+        {
+          "id": "q5",
+          "pergunta": "Operar opções sem conhecimento pode:",
+          "opcoes": [
+            "Levar à perda total rápida do capital investido.",
+            "Dar lucro garantido.",
+            "Ser seguro.",
+            "Ajudar o país."
+          ],
+          "correta": 0,
+          "explicacao": "É um mercado alavancado e complexo."
+        }
+      ]
+    },
+    {
+      "id": "t18",
+      "nivelId": 18,
+      "titulo": "Nível 18: Análise Técnica Básica",
+      "perguntas": [
+        {
+          "id": "q1",
+          "pergunta": "O que é um Suporte no gráfico?",
+          "opcoes": [
+            "Atendimento ao cliente.",
+            "Uma faixa de preço onde a ação tende a parar de cair (chão).",
+            "O teto do preço.",
+            "Uma linha diagonal."
+          ],
+          "correta": 1,
+          "explicacao": "É onde os compradores costumam aparecer com força."
+        },
+        {
+          "id": "q2",
+          "pergunta": "O que é uma Resistência?",
+          "opcoes": [
+            "Uma peça elétrica.",
+            "Uma faixa de preço onde a ação tem dificuldade de passar (teto).",
+            "O chão do preço.",
+            "Um indicador."
+          ],
+          "correta": 1,
+          "explicacao": "É onde os vendedores aparecem, impedindo a alta."
+        },
+        {
+          "id": "q3",
+          "pergunta": "O que é Tendência de Alta?",
+          "opcoes": [
+            "Sorte.",
+            "Topos e fundos ascendentes (cada vez mais altos).",
+            "Linha reta.",
+            "Preço parado."
+          ],
+          "correta": 1,
+          "explicacao": "O gráfico faz um zigue-zague para cima."
+        },
+        {
+          "id": "q4",
+          "pergunta": "O que é um Candle (Vela)?",
+          "opcoes": [
+            "Para iluminar.",
+            "Representação gráfica que mostra abertura, fechamento, máxima e mínima do preço.",
+            "Uma linha.",
+            "Um ponto."
+          ],
+          "correta": 1,
+          "explicacao": "Candles verdes (alta) e vermelhos (baixa) formam o gráfico de candlestick."
+        },
+        {
+          "id": "q5",
+          "pergunta": "A análise técnica foca em:",
+          "opcoes": [
+            "Lucro da empresa.",
+            "Preço e volume passado para prever movimentos futuros.",
+            "Notícias.",
+            "Dividendos."
+          ],
+          "correta": 1,
+          "explicacao": "Analisa o comportamento dos preços no gráfico."
+        }
+      ]
+    },
+    {
+      "id": "t19",
+      "nivelId": 19,
+      "titulo": "Nível 19: História e Crises",
+      "perguntas": [
+        {
+          "id": "q1",
+          "pergunta": "O que é uma Bolha Financeira?",
+          "opcoes": [
+            "Sabão.",
+            "Quando o preço de um ativo sobe muito acima do seu valor real por euforia.",
+            "Uma crise bancária.",
+            "Inflação."
+          ],
+          "correta": 1,
+          "explicacao": "Quando a bolha estoura, os preços despencam rapidamente."
+        },
+        {
+          "id": "q2",
+          "pergunta": "O que é Circuit Breaker?",
+          "opcoes": [
+            "Um disjuntor.",
+            "Paralisação emergencial da Bolsa quando cai mais de 10% num dia.",
+            "Fim do pregão.",
+            "Quebra de contrato."
+          ],
+          "correta": 1,
+          "explicacao": "Serve para acalmar os ânimos em dias de pânico extremo."
+        },
+        {
+          "id": "q3",
+          "pergunta": "O que foi a crise de 2008 (Subprime)?",
+          "opcoes": [
+            "Crise do petróleo.",
+            "Colapso causado por empréstimos imobiliários podres nos EUA.",
+            "Guerra mundial.",
+            "Crise de tecnologia."
+          ],
+          "correta": 1,
+          "explicacao": "Afetou o mundo todo e quebrou bancos gigantes como o Lehman Brothers."
+        },
+        {
+          "id": "q4",
+          "pergunta": "O que é Bear Market?",
+          "opcoes": [
+            "Mercado do Urso (Tendência de Baixa/Pessimismo).",
+            "Mercado do Touro (Alta).",
+            "Zoológico.",
+            "Mercado de Cerveja."
+          ],
+          "correta": 0,
+          "explicacao": "O urso ataca de cima para baixo (patada), simbolizando a queda."
+        },
+        {
+          "id": "q5",
+          "pergunta": "O que é Bull Market?",
+          "opcoes": [
+            "Mercado do Touro (Tendência de Alta/Otimismo).",
+            "Mercado do Urso.",
+            "Rodeio.",
+            "Mercado chato."
+          ],
+          "correta": 0,
+          "explicacao": "O touro ataca de baixo para cima (chifrada), simbolizando a alta."
+        }
+      ]
+    },
+    {
+      "id": "t20",
+      "nivelId": 20,
+      "titulo": "Nível 20: Construção de Patrimônio",
+      "perguntas": [
+        {
+          "id": "q1",
+          "pergunta": "Qual a fórmula da riqueza?",
+          "opcoes": [
+            "Ganhar na loteria.",
+            "(Renda - Gastos) x Juros ^ Tempo.",
+            "Gastar tudo.",
+            "Pedir empréstimo."
+          ],
+          "correta": 1,
+          "explicacao": "Aportar mensalmente (ganhar mais, gastar menos), investir bem e ter paciência."
+        },
+        {
+          "id": "q2",
+          "pergunta": "O que destrói patrimônio no longo prazo?",
+          "opcoes": [
+            "Inflação, Taxas altas e Impostos.",
+            "Investir em ações.",
+            "Trabalhar.",
+            "Estudar."
+          ],
+          "correta": 0,
+          "explicacao": "Você precisa render acima da inflação líquida de taxas para enriquecer de verdade."
+        },
+        {
+          "id": "q3",
+          "pergunta": "O melhor investimento é:",
+          "opcoes": [
+            "Aquele que te deixa rico em 1 mês.",
+            "Aquele adequado ao seu perfil e objetivos.",
+            "O que o vizinho comprou.",
+            "A poupança."
+          ],
+          "correta": 1,
+          "explicacao": "Não existe bala de prata. Existe o que funciona para VOCÊ."
+        },
+        {
+          "id": "q4",
+          "pergunta": "Rebalancear a carteira obriga você a:",
+          "opcoes": [
+            "Perder dinheiro.",
+            "Vender o que subiu muito (caro) e comprar o que ficou para trás (barato).",
+            "Pagar taxas à toa.",
+            "Sair do mercado."
+          ],
+          "correta": 1,
+          "explicacao": "É uma técnica disciplinada de comprar na baixa e vender na alta automaticamente."
+        },
+        {
+          "id": "q5",
+          "pergunta": "Investir em conhecimento (livros, cursos):",
+          "opcoes": [
+            "É gasto inútil.",
+            "Paga os melhores juros.",
+            "É perda de tempo.",
+            "Não ajuda."
+          ],
+          "correta": 1,
+          "explicacao": "Aumentar sua capacidade de gerar renda ativa é o maior acelerador da riqueza."
         }
       ]
     }

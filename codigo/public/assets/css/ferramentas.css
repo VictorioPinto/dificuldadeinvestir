@@ -519,3 +519,33 @@ button:hover,
     text-align: center;
   }
 }
+/* --- CORREÇÃO DO CONVERSOR DE MOEDAS --- */
+
+/* Garante que o grupo do input se comporte como uma coluna (texto em cima, input embaixo) */
+.converter-form .input-group {
+  display: flex;
+  flex-direction: column; /* Empilha os elementos verticalmente */
+  align-items: flex-start; /* Alinha à esquerda */
+  margin-bottom: 20px; /* Espaço abaixo do campo para não grudar nos selects */
+  width: 100%;
+}
+
+/* Espaçamento específico para o texto "Valor a Converter" */
+.converter-form .input-group label {
+  margin-bottom: 10px; /* Espaço entre o texto e a caixinha branca */
+  font-weight: 600;
+  color: #2d3748;
+}
+
+/* Garante que a caixa do input ocupe o espaço correto */
+.converter-form .amount-input {
+  width: 100%;
+}
+
+/* Ajuste visual do campo de digitação */
+.converter-form .amount-input input {
+  width: 100%;
+  font-size: 1.2rem; /* Aumenta um pouco a letra do número */
+  padding: 12px;
+  border-radius: 12px;
+}
