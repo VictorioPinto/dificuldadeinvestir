@@ -22,7 +22,8 @@
       "nome": "Rommel",
       "pontos": 500,
       "email": "rommel@gmail.com",
-      "id": "3"
+      "id": "3",
+      "tarefascompletar": [1]
     },
     {
       "login": "davi",
@@ -30,7 +31,8 @@
       "nome": "Davi",
       "pontos": 6666,
       "email": "davi@gmail.com",
-      "id": "4"
+      "id": "4",
+      "tarefascompletar": [1]
     },
     {
       "id": "0782",
@@ -39,9 +41,7 @@
       "nome": "111",
       "email": "111",
       "pontos": 100,
-      "tarefascompletar": [
-        1
-      ]
+      "tarefascompletar": [1]
     }
   ],
   "simulacoes_de_investimento": [
@@ -205,60 +205,35 @@
         {
           "id": "q1",
           "pergunta": "Pergunta Teste Nivel 2",
-          "opcoes": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
+          "opcoes": ["A", "B", "C", "D"],
           "correta": 0,
           "explicacao": "Teste"
         },
         {
           "id": "q2",
           "pergunta": "Pergunta Teste Nivel 2",
-          "opcoes": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
+          "opcoes": ["A", "B", "C", "D"],
           "correta": 0,
           "explicacao": "Teste"
         },
         {
           "id": "q3",
           "pergunta": "Pergunta Teste Nivel 2",
-          "opcoes": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
+          "opcoes": ["A", "B", "C", "D"],
           "correta": 0,
           "explicacao": "Teste"
         },
         {
           "id": "q4",
           "pergunta": "Pergunta Teste Nivel 2",
-          "opcoes": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
+          "opcoes": ["A", "B", "C", "D"],
           "correta": 0,
           "explicacao": "Teste"
         },
         {
           "id": "q5",
           "pergunta": "Pergunta Teste Nivel 2",
-          "opcoes": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
+          "opcoes": ["A", "B", "C", "D"],
           "correta": 0,
           "explicacao": "Teste"
         }
@@ -272,60 +247,35 @@
         {
           "id": "q1",
           "pergunta": "Pergunta Teste Nivel 3",
-          "opcoes": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
+          "opcoes": ["A", "B", "C", "D"],
           "correta": 0,
           "explicacao": "Teste"
         },
         {
           "id": "q2",
           "pergunta": "Pergunta Teste Nivel 3",
-          "opcoes": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
+          "opcoes": ["A", "B", "C", "D"],
           "correta": 0,
           "explicacao": "Teste"
         },
         {
           "id": "q3",
           "pergunta": "Pergunta Teste Nivel 3",
-          "opcoes": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
+          "opcoes": ["A", "B", "C", "D"],
           "correta": 0,
           "explicacao": "Teste"
         },
         {
           "id": "q4",
           "pergunta": "Pergunta Teste Nivel 3",
-          "opcoes": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
+          "opcoes": ["A", "B", "C", "D"],
           "correta": 0,
           "explicacao": "Teste"
         },
         {
           "id": "q5",
           "pergunta": "Pergunta Teste Nivel 3",
-          "opcoes": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
+          "opcoes": ["A", "B", "C", "D"],
           "correta": 0,
           "explicacao": "Teste"
         }
@@ -339,60 +289,35 @@
         {
           "id": "q1",
           "pergunta": "Pergunta Teste Nivel 4",
-          "opcoes": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
+          "opcoes": ["A", "B", "C", "D"],
           "correta": 0,
           "explicacao": "Teste"
         },
         {
           "id": "q2",
           "pergunta": "Pergunta Teste Nivel 4",
-          "opcoes": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
+          "opcoes": ["A", "B", "C", "D"],
           "correta": 0,
           "explicacao": "Teste"
         },
         {
           "id": "q3",
           "pergunta": "Pergunta Teste Nivel 4",
-          "opcoes": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
+          "opcoes": ["A", "B", "C", "D"],
           "correta": 0,
           "explicacao": "Teste"
         },
         {
           "id": "q4",
           "pergunta": "Pergunta Teste Nivel 4",
-          "opcoes": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
+          "opcoes": ["A", "B", "C", "D"],
           "correta": 0,
           "explicacao": "Teste"
         },
         {
           "id": "q5",
           "pergunta": "Pergunta Teste Nivel 4",
-          "opcoes": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
+          "opcoes": ["A", "B", "C", "D"],
           "correta": 0,
           "explicacao": "Teste"
         }
@@ -406,60 +331,35 @@
         {
           "id": "q1",
           "pergunta": "Pergunta Teste Nivel 5",
-          "opcoes": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
+          "opcoes": ["A", "B", "C", "D"],
           "correta": 0,
           "explicacao": "Teste"
         },
         {
           "id": "q2",
           "pergunta": "Pergunta Teste Nivel 5",
-          "opcoes": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
+          "opcoes": ["A", "B", "C", "D"],
           "correta": 0,
           "explicacao": "Teste"
         },
         {
           "id": "q3",
           "pergunta": "Pergunta Teste Nivel 5",
-          "opcoes": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
+          "opcoes": ["A", "B", "C", "D"],
           "correta": 0,
           "explicacao": "Teste"
         },
         {
           "id": "q4",
           "pergunta": "Pergunta Teste Nivel 5",
-          "opcoes": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
+          "opcoes": ["A", "B", "C", "D"],
           "correta": 0,
           "explicacao": "Teste"
         },
         {
           "id": "q5",
           "pergunta": "Pergunta Teste Nivel 5",
-          "opcoes": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
+          "opcoes": ["A", "B", "C", "D"],
           "correta": 0,
           "explicacao": "Teste"
         }
